@@ -1,0 +1,211 @@
+\section{Case Study 1 - The Experimentation in Software Engineering}\label{sec-case-study-1}
+La experimentación en todas las disciplinas es compleja, dado el número de actividades que conlleva y el nivel de factores que deben ser considerados y controlados. La aplicación de la experimentación en SE no es la excepción, más aún considerando que es una tendencia relativamente nueva en esta disciplina y que generalmente requiere de un número considerable de sujetos experimentales para su ejecución \cite{Kitchenham2002-GuideLinesESE}.
+
+Esta investigación fue motivada justamente por la necesidad de conocer la implicación de la complejidad de las actividades inherentes a la experimentación en el desempeño de un grupo de investigación en SE \cite{Wohlin2012-Experimentation}. Como caso de estudio, se eligió un grupo de investigación en SE específico, con la característica de ser representativo en la comunidad de ingeniería de software empírica. A continuación describimos las actividades de investigación llevadas a cabo en el Grupo de Investigación en Ingeniería de Software (GrISE) de la Universidad Politécnica de Madrid (UPM) de España.
+
+\subsection{Context}\label{subsec-context-case1}
+De acuerdo al criterio de selección indicado en la Sección \ref{sec-methology}, y dada la coyuntura de un proyecto de investigación en curso, estudiamos las actividades experimentales llevadas a cabo por los experimentadores del grupo GrISE de la UPM, para analizar su complejidad y la incidencia inherente en el desempeño del grupo.
+
+El GrISE es un grupo que puede considerarse representativo de la comunidad de ESE, cuya experiencia data de 1998. El grupo está integrado por experimentadores de reconocida experiencia, tales como: Natalia Juristo, Oscar Dieste, Sira Vegas, Ana Moreno, entre otros; lo cual se constata en su amplio número de publicaciones de alto impacto obtenidas a través de los años.
+
+El GrISE tiene declaradas varias familias de experimentos \cite{Basili1999-KnowledgeFamiliesExp} en distintas temáticas, las cuales han sido replicadas en múltiples ocasiones y en distintos entornos, por lo que ha recolectado una vasta cantidad de datos experimentales, lo cual representó una fuente valiosa para esta investigación.
+
+\subsection{Results}\label{subsec-results-case1}
+En esta sección se presentan los resultados obtenidos del estudio realizado en el grupo GrISE sobre el estado de la práctica de la aplicación de la experimentación en SE, siguiendo la metodología especificada en la Sección \ref{sec-methology}.
+
+Las fuentes consideradas para el estudio fueron: (1) Group's concerning literature, (2) Group's experimental material, (3) Group's specific material and (4) Researchers' knowledge. A continuación se detallan los productos y hallazgos obtenidos de la investigación en cada una de las fuentes consideradas.
+
+\subsubsection{Review of concerning literature}\label{subsubsec-study-literature}
+La literatura concerniente o común del grupo es un conjunto selecto de textos y estudios sugeridos por los experimentadores, lo cual permitió indagar respecto al estado de la práctica de la ESE. Por ejemplo, fueron considerados los textos: \textquotedblleft Experimentation in Software Engineering\textquotedblright of Wohlin et al. \cite{Wohlin2012-Experimentation} and \textquotedblleft Basics of Software Engineering Experimentation\textquotedblright~de Juristo et al. \cite{Juristo2001}. Igualmente, fueron considerados, entre otros, los estudios: \textquotedblleft Building Knowledge Through Families of Experiments\textquotedblright~\cite{Basili1999-KnowledgeFamiliesExp}, \textquotedblleft Reporting Experiments in Software Engineering\textquotedblright \cite{Jedlitschka2008}, \textquotedblleft Preliminary Guidelines for Empirical Research in Software Engineering\textquotedblright \cite{Kitchenham2002-GuideLinesESE}.
+
+Para realizar el estudio de literatura y sintetizar los aspectos fundamentales de la ESE (tales como las actividades realizadas, los artefactos utilizados y los hallazgos obtenidos), se utilizó la técnica de análisis de documentación (tercer nivel), con el apoyo de varios instrumentos (e.g.: materiales variados, software especializado en el manejo de documentos de texto y bibliografía, hardware variado, etc.).
+
+El resultado principal del estudio de la literatura común al grupo de investigación fue la adquisición del conocimiento básico de la ESE por parte del investigador. Conceptos tales como: Experimento, Replicación, Síntesis, Hipótesis, Variables, Diseño Experimental, etc.
+
+Los hallazgos obtenidos en torno al estudio son:
+
+ \begin{itemize}
+  \item Los textos de ESE son muy escasos, identificamos tan solo 3 textos: \cite{Juristo2001}, \cite{Wohlin2000} and \cite{Wohlin2012-Experimentation}.
+ 
+  \item A pesar de que el número de textos o fuentes literarias que hablan sobre la ESE son escasos, encontramos diversidad terminológica y operativa entre los protocolos experimentales propuestos en las distintas fuentes (ver Tabla \ref{tbl:diversidad-terminologica-fuentes-basicas}).
+
+  \item Los reportes experimentales centran su discurso básicamente en los resultados obtenidos en cada fase de la experimentación.
+
+  \item No encontramos relación entre las actividades de la ESE y la estructura de los reportes experimentales.
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\caption{Diversidad Terminológica y operativa de las actividades de la ESE identificadas en los textos específicos de ESE}
+\label{tbl:diversidad-terminologica-fuentes-basicas}
+%\begin{tabular}{|c|c|p{4.7cm}|}
+\begin{tabular}{| p{2.5cm} | p{2.5cm} | p{2.5cm}|}
+\hline
+\textbf{Juristo and Moreno (2001)} & \textbf{Jedlitschka et al. (2008)} & \textbf{Wohlin et al. (2012)}\\
+\hline
+Identify the factors & Goal refinement & Experiment idea\\
+\hline
+Identify the response variables & Sampling & Experiment scoping\\
+\hline
+Identify the parameters & Experimental Material & Experiment planning\\
+\hline
+Identify blocking variables & Tasks & Experiment operation\\
+\hline
+(Determine number of replications) & Hypotheses, Parameters, and Variables & Analysis \& interpretation\\
+\hline
+Select kind of experimental design & Experiment Design & Presentation \& package\\
+\hline
+Select experimental subjects & Procedure for conducting the study & Experiment report\\
+\hline
+Identify data collection process & Analysis Procedure &\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Review of experimental material}\label{subsubsec-study-material}
+El material experimental del GrISE se constituyó como una fuente de información fundamental para esta investigación, dado que representa los hallazgos de más de una década de experimentación. Este material experimental se compone fundamentalmente de: planteamientos de experimentos, diseños experimentales, artículos, libros, capítulos de libros, instrumentos experimentales (e.g.: formularios de tareas experimentales), objetos experimentales (e.g.: programas con faltas sembradas), raw data (e.g.: hojas de excel con datos de mediciones de tareas experimentales realizadas), material de entrenamiento (e.g.: manuales técnicos, libros, presentaciones), entre otros.
+
+Utilizando la técnica de análisis de documentación y los instrumentos correspondientes, se procedió a la revisión del material experimental del grupo objeto de estudio, como por ejemplo el manual técnico \textquotedblleft Software Testing Techniques\textquotedblright~\cite{Juristo2006-SoftwareTestingTechniques}, los reportes: \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment}, \cite{Juristo2006-SoftwareTestingTechniques}, \cite{Juristo-2003-ESERNET}, el libro \textquotedblleft Basics of Software Engineering Experimentation\textquotedblright~\cite{Juristo2001}, entre otros.
+
+El resultado del proceso de revisión del material experimental del GrISE fue reforzar los conocimientos básicos sobre la experimentación aplicada en la SE. De la mano de este proceso de revisión, se obtuvo los siguientes hallazgos:
+
+\begin{itemize}
+	\item El material experimental contiene un conocimiento rico sobre el proceso de experimentación en SE, debido a que representa más de una década de experimentación llevada a cabo. A decir de los propios experimentadores, estos reportes a pesar de haber sido aceptados en congresos y revistas de alto impacto e incluso haber sido galardonados, \textit{las actividades experimentales que los generó han ido evolucionando y mejorando con el tiempo}.
+
+	\item No existe una política o herramienta para la adecuada gestión del material experimental existente en el GrISE. Se encontraron datos experimentales en distintos formatos, cuya ubicación y ordenamiento son conocidos solo por la persona que los gestiona.
+
+	\item El planteamiento de experimentos tienen explícitas las actividades llevadas a cabo en la experimentación, mas no el orden en que son realizadas.
+
+	\item La ejercitación con los datos experimentales ayuda con la familiarización de su formato y uso, y especialmente con actividades propias de la experimentación, tales como: Cálculo de medidas con raw-data contenida en hojas de excel, formateo de la raw data para ser analizada estadísticamente, reproducción de resultados estadísticos a partir de las mediciones, recreación de gráficos y tablas estadísticas a partir de las mediciones, etc.
+
+	\item Existen errores del tipo estadístico en los resultados contenidos en el material experimental.
+
+	\item A decir de los propios experimentadores, \textit{las actividades experimentales que generaron los reportes experimentales aceptados en congresos y revistas de alto impacto e incluso algunos que fueron galardonados, han ido evolucionando y mejorando con el tiempo}.
+\end{itemize}
+
+En adición a la revisión del material experimental del GrISE descrita, se realizó una revisión específica de dicho material, con el propósito de replicar en la práctica un experimento específico, lo que se describe a continuación.
+
+\subsubsection{Review of specific experimental material}
+Esta revisión tuvo como propósito estudiar el material experimental de un experimento específico para poder replicarlo en la práctica y así aprender de la experiencia. Más específicamente, se realizó una replicación \cite{Fonseca-2013-Replication-Efectiveness-In-Out} del experimento de técnicas de pruebas de software de Juristo et al. \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment} en diciembre de 2011 en la Universidad de la Fuerzas Armadas ESPE extensión Latacunga de Ecuador.
+
+Para la revisión del material específico también fue utilizada la técnica de análisis de documentación y los instrumentos correspondientes. Sin embargo, se contó con un aditamento adicional que fue clave para el éxito de la replicación, esto es la guía y supervisión de los investigadores que realizaron el experimento original.
+
+\textit{Realizar en la práctica una replicación experimental permitió entender de forma más didáctica su proceso completo y las actividades inherentes}. Igualmente permitió validar el conocimiento obtenido en la revisión de la literatura referente y del material experimental del GrISE.
+
+El hallazgo más importante de esta actividad fue:
+
+\begin{itemize}
+	\item \textit{Comprobar la dificultad que representa llevar a cabo un experimento en la práctica, más aún al tratar de recrear fielmente un experimento ya realizado en un entorno diferente}.
+\end{itemize}
+
+\subsubsection{Acquisition of research group knowledge}\label{subsubsec-conocimiento-grupo}
+El conocimiento obtenido de los experimentadores del GrISE sin duda alguna se constituyó como el más valioso insumo para alcanzar el objetivo de investigación. Esta actividad permitió hacer explícita una parte valiosa del conocimiento de quienes llevan a cabo las actividades experimentales de SE dentro del grupo, lo cual no había sido realizado anteriormente.
+
+El proceso de obtención del conocimiento se sustentó principalmente en las técnicas de: (1) Entrevistas sobre las actividades experimentales realizadas, y (2) Focus Groups sobre los conceptos manejados en la experimentación.
+
+La técnica de entrevista se sustentó adicionalmente en las técnicas de modelado de conceptos, observación participativa y sistemas instrumentales con el propósito de: recrear esbozos (ver Figura \ref{fig-proceso-exp-boseto}) en herramientas informáticas, coadyuvar ideas impartidas y recibir feedback complementario a través de medios tecnológicos, respectivamente. La aplicación de estas técnicas incluyó la utilización de diversas herramientas e instrumentos, de los cuales destacan: mecanismos tecnológicos para capturar en video, audio y fotografías los detalles de las entrevistas y facilitar su recreación, herramientas informáticas para hacer explícito el conocimiento adquirido tanto en texto como en gráficos, entre otros.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3.2in]{images/Boseto-Proccess}
+	\caption{Extracto de las actividades experimentales realizadas por los experimentadores del GrISE en boseto}
+	\label{fig-proceso-exp-boseto}
+\end{figure}
+
+La técnica de Focus Groups se apoyó en las mismas técnicas e instrumentación de la entrevista, con el propósito de que: Los miembros del equipo de trabajo puedan esbozar y participar en el modelado conceptual de la ESE, el investigador participe activamente en el debate sobre las propuestas de los experimentadores y el investigador cubra inquietudes menores con el experimentador sin tener necesariamente contacto personal.
+
+La aplicación de las técnicas indicadas se describen a continuación más en detalle.
+
+\textbf{Entrevistas sobre las actividades experimentales realizadas}\\
+El proceso de entrevistas fue cíclico. Se realizaron varias sesiones de entrevistas con cada experimentador. Cada sesión generó un producto intermedio (ver Figura \ref{fig-proceso-draft}), hasta llegar a obtener un producto final (ver Figura \ref{fig-proceso-exp}). En cada sesión fue validado el producto resultante por el experimentador entrevistado.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3.2in]{images/Proccess-Draft}
+	\caption{Extracto de las actividades experimentales realizadas por los experimentadores del GrISE (versión intermedia)}
+	\label{fig-proceso-draft}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3.2in]{images/Proccess}
+	\caption{Extracto de las actividades experimentales de SE realizadas por los experimentadores del GrISE (versión final)}
+	\label{fig-proceso-exp}
+\end{figure}
+
+El producto obtenido del proceso de entrevistas fue un manuscrito en donde se detallan las actividades experimentales que lleva a cabo cada experimentador. En base a las actividades identificadas, fueron denominados tres roles dentro del proceso de ESE: Research Manager, Experiment Manager and Senior Experimenter. Como producto adicional, se generó un modelo de proceso, representado en un flujograma (ver Figura \ref{fig-proceso-exp}), el cual se consiguió de la entrevista realizada al experimentador con mayor experiencia y reconocimiento del GrISE.
+
+Los hallazgos obtenidos en torno a las entrevistas son:  
+
+\begin{itemize}
+	\item Los experimentadores de mayor experiencia tienen un conocimiento más amplio y detallado sobre las actividades que se llevan a cabo en la experimentación en SE. En este caso, el flujograma del proceso de experimentación (ver Figura \ref{fig-proceso-exp})  generado fue obtenido de la entrevista al experimentador más representativo del GrISE.
+
+	\item El detalle de actividades obtenido en el flujograma indica que los pocos textos existentes en ESE están lejos de mostrar el trabajo real que implica la experimentación en la práctica de principio a fin.
+	
+	\item Las actividades realizadas por los experimentadores entrevistados difieren de un experimentador a otro, de hecho ningún experimentador entrevistado lleva a cabo todas las actividades que incluye la ESE.
+	
+	\item No existe una definición explicita para el grupo actividades que realiza cada experimentador; de hecho, como resultado de las entrevistas se identificaron 3 roles dentro de la ESE.
+	
+	\item Existen actividades experimentales que son ejecutadas por duplicado en una misma instancia experimental. Como por ejemplo: Gestión de la replicación experimental, planteamiento del experimento, entre otras.
+\end{itemize}
+
+\textbf{Focus Groups sobre los conceptos manejados en la experimentación en SE}\\
+El proceso de Focus Groups sobre la terminología manejada en la experimentación en SE fue cíclico. Se partió de un boceto creado en consenso por los experimentadores en la pizarra (ver Figura \ref{fig-conceptos-draft}), luego de los cual se realizaron varias sesiones de focus groups. En cada instancia de Focus Groups se generó un producto intermedió, el cual fue validado por el grupo en la siguiente sesión, hasta obtener el producto final (ver Figura \ref{fig-conceptos-exp-boseto}).
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3in]{images/Concept-Draft}
+	\caption{Extracto del Modelo Conceptual de la Experimentación en GrISE en Boceto}
+	\label{fig-conceptos-draft}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3in]{images/Boseto-Concepts}
+	\caption{Extracto del Modelo Conceptual de la Experimentación en GrISE (versión final)}
+	\label{fig-conceptos-exp-boseto}
+\end{figure}
+
+El producto obtenido de este primer proceso de Focus Groups fue un modelo conceptual genérico de la experimentación en SE (ver Figura \ref{fig-conceptos-exp-boseto}), el cual no fue consensuado por el grupo. Por lo tanto, se llevó a cabo otro proceso de focus groups, con la particularidad de que esta vez cada experimentador indicó únicamente los conceptos que maneja a través de las actividades que efectivamente realiza en una instancia experimental. Este nuevo ciclo de Focus Groups generó tres modelos conceptuales, los cuales se muestran en la Figura \ref{fig-conceptos-exp}. Es preciso mencionar que estoy modelos responden a tres roles principales que se definieron gracias a este proceso, denominados: Research Manager, Experiment Manger, Senior Eperimenter.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=3in]{Images/Concepts}
+	\caption{Extracto de los Modelo Conceptuales}
+	\label{fig-conceptos-exp}
+\end{figure}
+
+Los hallazgos identificados en base a los resultados obtenidos son:
+
+\begin{itemize}
+	\item El nivel de detalle conceptual del experimentador que se encarga de la ejecución misma de un experimento es muy alto.
+	
+	\item Se evidenció la diversidad terminológica entre experimentadores que realizan actividades similares en una instancia experimental en SE.
+	
+	\item Se evidenció discrepancia conceptual sobre las actividades de experimentación en SE entre experimentadores.
+	
+	\item Se confirmó que los conceptos manejados por los experimentadores en SE obedecen a las actividades específicas que realizan en una instancia experimental.
+	
+	\item Se evidenció la existencia de roles o perfiles de experimentadores: Experimentadores que custodian el material experimental del grupo, experimentadores que ejecutan en la práctica la experimentación y experimentadores que gestionan con el medio externo los nuevos experimentos y su factibilidad.
+\end{itemize}
+
+\subsection{Conclusions of Case Study 1}
+Los resultados de la investigación constituyen una visión explícita de la experimentación en SE dentro de un grupo de investigación representativo de la comunidad de ingeniería de software empírica, incluso para los mismos experimentadores que veían por primera vez plasmado de forma explícita en medios accesibles el modelo de la ESE. Más específicamente, las conclusiones obtenidas a partir de esta investigación son:
+
+\begin{enumerate}[(a)]
+\item La generalidad de los textos existentes y la diversidad estructural de los reportes experimentales en la comunidad de ingeniería de software empírica no representan una guía efectiva para llevar a cabo una instancia experimental en la práctica.
+ 
+\item La falta de formalización de los reportes experimentales impide realizar una lectura compresiva estándar, ya que para cada reporte es preciso descubrir su particularidad al momento de reportar.
+
+\item El uso de formatos distintos en los reportes impide identificar de forma eficiente las actividades llevadas a cabo en una instancia de experimentación en SE.
+
+\item El formato de los archivos que contienen los datos experimentales de las instancias experimentales, no son estándar, por lo que es imposible que una persona ajena al grupo de trabajo entienda los conceptos, entidades y acrónimos utilizados.
+
+\item Se pudo percibir la posibilidad de que la existencia de mecanismos automatizados que guarden el vínculo entre los experimentos y sus elementos (materiales, raw-data, diseño, etc.), podrían ayudar a los experimentadores a no cometer errores, dado el alto número de actividades que deben cubrir.
+
+\item Una comunicación más cercana con los experimentadores, permitió encontrar detalles que generalmente no se reflejan en los reportes experimentales y que ayudaron a entender algunos resultados, conclusiones de los reportes experimentales y llevar a cabo una replicación experimental.
+
+\item Durante las entrevistas personales mantenidas con los experimentadores se evidenció un tipo de información implícita de los experimentos, la cual no es registrada en ningún medio. Este tipo de información posiblemente proviene de la dimensión tácita del conocimiento.
+
+\item La deficiencia en la gestión de la información dentro del GrISE podría deberse a la diversidad operativa de los experimentadores, lo que dificulta el intercambio de información.
+\end{enumerate}
