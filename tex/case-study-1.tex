@@ -1,4 +1,4 @@
-\section{Case Study 1 - The Experimentation in Software Engineering}\label{sec-case-study-1}
+\section{The Experimentation in Software Engineering}\label{sec-ESE-etnography}
 %La experimentación en todas las disciplinas es compleja, dado el número de actividades que conlleva y el nivel de factores que deben ser considerados y controlados. La aplicación de la experimentación en SE no es la excepción, más aún considerando que es una tendencia relativamente nueva en esta disciplina y que generalmente requiere de un número considerable de sujetos experimentales para su ejecución \cite{Kitchenham2002-GuideLinesESE}.
 
 %Esta investigación fue motivada justamente por la necesidad de conocer la implicación de la complejidad de las actividades inherentes a la experimentación en el desempeño de un grupo de investigación en SE \cite{Wohlin2012-Experimentation}.
@@ -8,20 +8,24 @@ El estudio fue realizado en el Grupo de Investigación en Ingeniería de Software 
 \subsection{Aproximación inicial}\label{subsec-results-case1}
 %En esta sección se presentan los resultados obtenidos del estudio realizado en el grupo GrISE sobre el estado de la práctica de la aplicación de la experimentación en SE, siguiendo la metodología especificada en la Sección \ref{sec-methology}.
 
-Los primeros contactos con el grupo de investigación tuvieron lugar en 2012. Nuestra pretensión inicial era adquirir el conocimiento del grupo y volcarlo en modelos conceptuales, de una forma similar a la práctica de la ingeniería del conocimiento. Sin embargo, pronto se evidenció una barrera de entrada en el acceso al grupo: aunque el discurso del grupo era claramente general, su referente era eminentemente local (e.g.: referido a ciertos objetos utilizados por el grupo, como los ficheros de datos). Así mismo, los investigadores hacían continuas referencias a fuentes de consulta que ellos consideraban como estándar, como por ejemplo el texto: \textquotedblleft Experimentation in Software Engineering\textquotedblright by Wohlin et al. \cite{Wohlin2012-Experimentation}. Es preciso mencionar, que cada investigador del GrISE realiza actividades de experimentación diferentes, cada uno en su contexto personal, de acuerdo a su afinidad y conocimiento y de acuerdo a su propia metodología; lo que complica aún más el acceso al conocimiento del grupo.
+Los primeros contactos con el grupo de investigación tuvieron lugar en 2012. Nuestra pretensión inicial era adquirir el conocimiento del grupo y volcarlo en modelos conceptuales, de una forma similar a la práctica de la ingeniería del conocimiento. Sin embargo, pronto se evidenció una barrera de entrada en el acceso al grupo: aunque el discurso del grupo era claramente general, su referente era eminentemente local (i.e., referido a ciertos objetos utilizados por el grupo, como los ficheros de datos). Así mismo, los miembros del GrISE hacían continuas referencias a fuentes de consulta que ellos consideraban estándar, como por ejemplo el texto: \textit{Experimentation in Software Engineering} by Wohlin et al. \cite{Wohlin2012-Experimentation}.
 
-Por todo ello, la primera actividad que realizamos fue el estudio de la preferred literature.
+Los miembros del GrISE se referían comúnmente también a los resultados obtenidos de su investigación, los cuales son generalmente publicados en revistas o congresos representativos de la Comunidad de SE Empírica. En estos comentarios, los miembros del GrISE resaltaron mucho el gran esfuerzo que al parecer conlleva hacer un experimento, en especial lo concerniente a la preparación del material necesario para su ejecución. Por  tanto, consideramos que el material experimental del GrISE  constituye una fuente de información fundamental, dado que contiene un conocimiento rico sobre el proceso de experimentación en SE, debido a que representa la historia de más de una década de experimentación.
+
+La aparente importancia del material experimental y el potencial conocimiento ahí contenido, nos indujo a pensar en que la ejercitación con dicho material podría ayudarnos con la familiarización de su formato y uso; pero que especialmente podría permitir familiarizarnos con actividades propias de la experimentación, tales como: cálculo de medidas con raw-data contenida en los materiales, formateo de la raw data para ser analizada estadísticamente, reproducción de resultados estadísticos a partir de las mediciones, recreación de gráficos y tablas estadísticas a partir de las mediciones; e inclusive pensamos que la ejercitación con los datos experimentales, podría permitirnos verificar los resultados de los estudios estadístico realizados.
+
+Las constantes insinuaciones de los miembros del GrISE sobre la complejidad del proceso de experimentación en SE, nos motivó por una parte a considerar la posibilidad de no solo estudiar su material experimental de forma general, sino inclusive seleccionar material específico sobre un experimento particular, para intentar recrearlo y aprender de la práctica en un entorno real. Por otra parte, vimos que los miembros del GrISE tenían en si todo el conocimiento de la experimentación realizada por varios años, y que por lo tanto, se constituían en otra fuente vital de información por explotar.
+
+Por todo ello, realizamos las siguientes actividades: review of preferred literature, review of experimental material, review of specific experimental material and acquisition of research group knowledge.
 
 %Las fuentes consideradas para el estudio fueron: (1) Group's concerning literature, (2) Group's experimental material, (3) Group's specific material and (4) Researchers' knowledge. A continuación se detallan los productos y hallazgos obtenidos de la investigación en cada una de las fuentes consideradas.
 
 \subsubsection{Review of preferred literature}\label{subsubsec-study-literature}
-Los investigadores del GrISE señalaron como fuentes básicas acerca de la experimentación en IS:  \textquotedblleft Experimentation in Software Engineering\textquotedblright of Wohlin et al. \cite{Wohlin2000} and \textquotedblleft Basics of Software Engineering Experimentation\textquotedblright~of Juristo et al. \cite{Juristo2001}. También mencionaron de forma preferente los estudios: \textquotedblleft Building Knowledge Through Families of Experiments\textquotedblright~\cite{Basili1999-KnowledgeFamiliesExp}, \textquotedblleft Reporting Experiments in Software Engineering\textquotedblright \cite{Jedlitschka2008} and \textquotedblleft Preliminary Guidelines for Empirical Research in Software Engineering\textquotedblright \cite{Kitchenham2002-GuideLinesESE}.
+Los miembros del GrISE señalaron como fuentes básicas acerca de la experimentación en IS: \textit{Experimentation in Software Engineering} by Wohlin et al. \cite{Wohlin2000} and \textit{Basics of Software Engineering Experimentation} by Juristo et al. \cite{Juristo2001}. También mencionaron de forma preferente los estudios: \textit{Building Knowledge Through Families of Experiments} \cite{Basili1999-KnowledgeFamiliesExp}, \textit{Reporting Experiments in Software Engineering} \cite{Jedlitschka2008} and \textit{Preliminary Guidelines for Empirical Research in Software Engineering} \cite{Kitchenham2002-GuideLinesESE}.
 
-%Para realizar el estudio de literatura y sintetizar los aspectos fundamentales de la ESE (tales como las actividades realizadas, los artefactos utilizados y los hallazgos obtenidos), se utilizó la técnica de análisis de documentación (tercer nivel), con el apoyo de varios instrumentos (e.g.: materiales variados, software especializado en el manejo de documentos de texto y bibliografía, hardware variado, etc.).
+Las fuentes anteriores fueron revisadas en profundidad por dos investigadores (E. Fonseca y E. Espinosa). En el momento en que se realizó el estudio, dichos investigadores se iniciaban en el mundo de la ESE, por lo que los libros y artículos propiciaron la adquisición del conocimiento específico referido a conceptos tales como: Experimento, Replicación, Síntesis, Hipótesis, Variables, Diseño Experimental, etc. Al mismo tiempo, comenzamos a organizar dichos conceptos en un modelo conceptual preliminar.
 
-Las fuentes anteriores fueron revisadas en profundidad por dos de los investigadores. En el momento de realización del estudio dichos investigadores se iniciaban en el mundo de la IS experimental, por lo que los libros y artículos propiciaron la adquisición del conocimiento básico de la ESE, referido a conceptos tales como: Experimento, Replicación, Síntesis, Hipótesis, Variables, Diseño Experimental, etc.
-
-El primer aspecto que nos llamó la atención fue la \textit{diversidad terminológica y operativa entre las actividades experimentales propuestas en las distintas fuentes}. La Tabla \ref{tbl:diversidad-terminologica-fuentes-basicas} muestra algunos ejemplos.
+El primer aspecto que nos llamó la atención fue la \textit{diversidad terminológica con que las distintas fuentes se referían a similares actividades del proceso experimental}. La Tabla \ref{tbl:diversidad-terminologica-fuentes-basicas} muestra algunos ejemplos. En general, cada fuente de forma superficial, parece describir distintos tipos de experimentos, cada uno caracterizado por un proceso diferente. Una vez adquiridos los conocimientos acerca de la materia, es inmediato percibir las similitudes, pero no es claro el grado de similitud justamente por la diversidad terminológica identificada.
 
 \begin{table}[htbp]
 \centering
@@ -34,43 +38,39 @@ El primer aspecto que nos llamó la atención fue la \textit{diversidad terminológ
 \hline
 Objective Definition & Experiment idea & Goal refinement\\
 \hline
-Design & Experiment scoping & Sampling\\
+Design & Experiment scoping & Experiment Design\\
 \hline
-Execution & Experiment planning & Experimental Material\\
+ & Experiment planning & Hypotheses, Parameters, and Variables\\
 \hline
-Analysis & Experiment operation & Tasks\\
+ &  & Procedure for conducting the study\\
 \hline
- & Analysis \& interpretation & Hypotheses, Parameters, and Variables\\
+ &  & Tasks\\
 \hline
- & Presentation \& package & Experiment Design\\
+ &  & Experimental Material\\
 \hline
- & Experiment report & Procedure for conducting the study\\
+Execution & Experiment operation & Sampling\\
 \hline
- &  & Analysis Procedure\\
+Analysis & Analysis \& interpretation & Analysis Procedure\\
+\hline
+ & Presentation \& package & \\
+\hline
+ & Experiment report & \\
 \hline
 \end{tabular}
 \end{table}
 
-En general, cada fuente citada en la Tabla \ref{tbl:diversidad-terminologica-fuentes-basicas} parece describir de forma superficial un distinto tipo de experimento; es decir, al parecer cada fuente propone un proceso experimental para SE pero llevado a cabo de forma diferente, con fases diferentes. Sin embargo, una vez adquiridos los conocimientos acerca de la materia, se perciben las similitudes. Esto no ocurre solo a nivel de libros de texto tales como \cite{Juristo2001} y \cite{Wohlin2000}, lo cual sería esperable, \textit{sino que también se extiende a otros materiales, tales como recomendaciones de reporte y artículos}. Véase a este respecto como se comparan las guidelines de reporte \cite{Jedlitschka2008}, con los libros antes citados.
+Esto no ocurre solo a nivel de libros de texto, tales como \cite{Juristo2001} y \cite{Wohlin2000}, lo cual sería esperable, \textit{sino que también se extiende a otros materiales, tales como recomendaciones de reporte y artículos}. Véase a este respecto como se comparan las guidelines de reporte \cite{Jedlitschka2008}, con los libros antes citados. Por ejemplo, para \cite{Jedlitschka2008} existe un \textit{Goal refinement}; mientras que para \cite{Juristo2001} al parecer el mismo concepto es referido como \textit{Objective definition} y para \cite{Wohlin2000} se nombra como \textit{Experiment idea}.
 
-Otro aspecto noticeable es la \textit{carencia de textos en ESE}. Después de buscar libros de texto complementarios a los indicados por los miembros del GrISE, solo hemos localizado la nueva edición de Wohlin et al. \cite{Wohlin2012-Experimentation}. Preguntados a este respecto a los miembros del GrISE, nos señalaron otras fuentes, tales como Box et al. \cite{Box2008} o Montgomery \cite{montgomery-2010-applied-statistics}. Ambos libros pertenecen al área de ingeniería, lo que aumentó nuestra convicción no solo en la escasez de fuentes en ESE, sino también en la presencia de una más que considerable diversidad no solo terminológica, sino también probablemente de aproximaciones y enfoques. Por tanto, a continuación estudiamos el material experimental del grupo GrISE.
+Otro aspecto noticeable es la \textit{carencia de textos en ESE}. Después de buscar libros de texto complementarios a los indicados por los miembros del GrISE, con la intención de verificar si la diversidad terminológica era un problema general, o estaba circunscrito a las fuentes recomendadas, solo hemos localizado la nueva edición de Wohlin et al. \cite{Wohlin2012-Experimentation}. Preguntados a este respecto a los miembros del GrISE, nos señalaron otras fuentes, tales como Box et al. \cite{Box2008} o Montgomery \cite{montgomery-2010-applied-statistics}. Ambos libros pertenecen al área de ingeniería, pero no a la ESE, lo que aumentó nuestra convicción no solo en la escasez de fuentes en ESE, sino también de que la \textit{diversidad terminológica pudiera ser todavía mayor de la observada, incluyendo también una diversidad de aproximaciones y enfoques}.
 
 \subsubsection{Review of experimental material}\label{subsubsec-study-material}
-Este material experimental del grupo GrISE se compone fundamentalmente de: planteamientos de experimentos, diseños experimentales, artículos (e.g.: \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment}, \cite{Juristo2006-SoftwareTestingTechniques}, \cite{Juristo-2003-ESERNET}, etc.), libros, capítulos de libros, instrumentos experimentales (e.g.: formularios de tareas experimentales), objetos experimentales (e.g.: programas con faltas sembradas), raw data (e.g.: hojas de excel con datos de mediciones de tareas experimentales realizadas), material de entrenamiento (e.g.: manuales técnicos \cite{Juristo2006-SoftwareTestingTechniques}, presentaciones), entre otros.
+El material experimental del grupo GrISE se compone fundamentalmente de: planteamientos de experimentos, diseños experimentales, artículos (e.g.: \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment}, \cite{Juristo2006-SoftwareTestingTechniques}, \cite{Juristo-2003-ESERNET}, etc.), instrumentos experimentales (e.g.: formularios de tareas experimentales), objetos experimentales (e.g.: programas con faltas sembradas), raw data (e.g.: hojas de excel con datos de mediciones de tareas experimentales realizadas), material de entrenamiento (e.g.: manuales técnicos \cite{Juristo2006-SoftwareTestingTechniques}, presentaciones), entre otros.
 
-Es preciso mencionar, que el material experimental del grupo GrISE se constituyó como una fuente de información fundamental para esta investigación, dado que contiene un conocimiento rico sobre el proceso de experimentación en SE, debido a que representa la historia de más de una década de experimentación.
-
-La revisión del material fue realizada utilizando la técnica de análisis de documentación y los instrumentos correspondientes. Este proceso de revisión permitió reforzar los conocimientos básicos sobre la experimentación aplicada en la SE. Sin embargo, también encontramos una barrera para acceder al material experimental, dado que \textit{no existe una política o herramienta para una adecuada gestión del material}. Por ejemplo, se encontraron datos experimentales en distintos formatos, cuya ubicación y ordenamiento son conocidos solo por la persona que los gestiona.
+El primer problema que nos encontramos fue el mismo acceso al material experimental, dado que \textit{no existe una política o herramienta para la gestión del material}. Un ejemplo paradigmático son los raw data. Encontramos raw data en distintos tipos de ficheros, correspondientes a distintas versiones, cuya ubicación y formato son conocidos solo por la persona que los gestiona. Lo mismo puede afirmarse, aunque en menor medida, de los restantes tipos de materiales (e.g.: instrumentos u objetos experimentales), con la excepción de las publicaciones, las cuáles son fácilmente accesibles en las librerías digitales.
 
 En adición a la técnica de revisión utilizada, fue preciso entrevistar a los experimentadores del GrISE, lo cual generó resultados inesperados. Por ejemplo, a decir de los propios experimentadores, los reportes experimentales, a pesar de haber sido aceptados en congresos y revistas de alto impacto e incluso haber sido galardonados, \textit{las actividades experimentales que los generaron han ido evolucionando y mejorando con el tiempo}.
 
 Nos llamó la atención que \textit{el planteamiento de experimentos tienen explícitas las actividades llevadas a cabo en la experimentación, mas no el orden en que son realizadas}.
-
-Encontramos que \textit{la ejercitación con los datos experimentales ayuda con la familiarización de su formato y uso}; pero especialmente permite familiarizarse con actividades propias de la experimentación, tales como: cálculo de medidas con raw-data contenida en hojas de excel, formateo de la raw data para ser analizada estadísticamente, reproducción de resultados estadísticos a partir de las mediciones, recreación de gráficos y tablas estadísticas a partir de las mediciones, etc.
-
-Un aspecto que nos llamó la atención fue que la ejercitación con los datos experimentales, nos permitió \textit{ubicar la existencia de errores del tipo estadístico en los resultados contenidos en parte de material experimental}.
-
-En adición a la revisión general del material experimental del GrISE, vimos la necesidad de realizar una revisión de material experimental específico, con el propósito de replicar en la práctica un experimento particular para aprender haciendo y probar el conocimiento adquirido.
 
 \subsubsection{Review of specific experimental material}
 Esta revisión tuvo como propósito estudiar el material experimental de un experimento específico para poder replicarlo en la práctica y así aprender de la experiencia. Más específicamente, se realizó una replicación \cite{Fonseca-2013-Replication-Efectiveness-In-Out} del experimento de técnicas de pruebas de software de Juristo et al. \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment} en diciembre de 2011 en la Universidad de la Fuerzas Armadas ESPE extensión Latacunga de Ecuador.
