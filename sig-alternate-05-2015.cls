@@ -57,6 +57,8 @@
 \usepackage{comment}
 \usepackage{multirow}
 \usepackage{enumerate}
+\usepackage{placeins}
+\usepackage{framed}
 % Need this for accents in Arial/Helvetica
 %\usepackage[T1]{fontenc}  % Gerry March 12, 2007 - causes Type 3 problems (body text)
 %\usepackage{textcomp}
