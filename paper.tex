@@ -1,238 +1,144 @@
-% This is "sig-alternate.tex" V2.1 April 2013
-% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% This example file demonstrates the use of the 'sig-alternate.cls'
-% V2.5 LaTeX2e document class file. It is for those submitting
-% articles to ACM Conference Proceedings WHO DO NOT WISH TO
-% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
-% The 'sig-alternate.cls' file will produce a similar-looking,
-% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+% This is a general template file for the LaTeX package SVJour3
+% for Springer journals.          Springer Heidelberg 2010/09/16
 %
-% ----------------------------------------------------------------------------------------------------------------
-% This .tex file (and associated .cls V2.5) produces:
-%       1) The Permission Statement
-%       2) The Conference (location) Info information
-%       3) The Copyright Line with ACM data
-%       4) NO page numbers
+% Copy it to a new file with a new name and use it as the basis
+% for your article. Delete % signs as needed.
 %
-% as against the acm_proc_article-sp.cls file which
-% DOES NOT produce 1) thru' 3) above.
+% This template includes a few options for different layouts and
+% content for various journals. Please consult a previous issue of
+% your journal as needed.
 %
-% Using 'sig-alternate.cls' you have control, however, from within
-% the source .tex file, over both the CopyrightYear
-% (defaulted to 200X) and the ACM Copyright Data
-% (defaulted to X-XXXXX-XX-X/XX/XX).
-% e.g.
-% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
-% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% ---------------------------------------------------------------------------------------------------------------
-% This .tex source is an example which *does* use
-% the .bib file (from which the .bbl file % is produced).
-% REMEMBER HOWEVER: After having produced the .bbl file,
-% and prior to final submission, you *NEED* to 'insert'
-% your .bbl file into your source .tex file so as to provide
-% ONE 'self-contained' source file.
+% First comes an example EPS file -- just ignore it and
+% proceed on the \documentclass line
+% your LaTeX will extract the file if required
+\begin{filecontents*}{example.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 19 19 221 221
+%%CreationDate: Mon Sep 29 1997
+%%Creator: programmed by hand (JK)
+%%EndComments
+gsave
+newpath
+  20 20 moveto
+  20 220 lineto
+  220 220 lineto
+  220 20 lineto
+closepath
+2 setlinewidth
+gsave
+  .4 setgray fill
+grestore
+stroke
+grestore
+\end{filecontents*}
 %
-% ================= IF YOU HAVE QUESTIONS =======================
-% Questions regarding the SIGS styles, SIGS policies and
-% procedures, Conferences etc. should be sent to
-% Adrienne Griscti (griscti@acm.org)
+\RequirePackage{fix-cm}
 %
-% Technical questions _only_ to
-% Gerald Murray (murray@hq.acm.org)
-% ===============================================================
+%\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+\documentclass[twocolumn]{svjour3}          % twocolumn
 %
-% For tracking purposes - this is V2.0 - May 2012
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+%===============================
+\usepackage{graphicx}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{soul}
+\usepackage[latin1]{inputenc}
+\usepackage{comment}
+\usepackage{rotating}
+\usepackage{framed}
+%===============================
 
-\documentclass{sig-alternate-05-2015}
-
-
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
 \begin{document}
 
-% Copyright
-\setcopyright{acmcopyright}
-%\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
-%\setcopyright{usgov}
-%\setcopyright{usgovmixed}
-%\setcopyright{cagov}
-%\setcopyright{cagovmixed}
-
-
-% DOI
-\doi{10.475/123_4}
-
-% ISBN
-\isbn{123-4567-24-567/08/06}
-
-%Conference
-\conferenceinfo{EASE '17}{June 15--16, 2017, BTH - Karlskrona, Sweden}
-
-\acmPrice{\$15.00}
-
-%
-% --- Author Metadata here ---
-\conferenceinfo{EASE}{'17 BTH - Karlskrona, Sweden}
-%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
-%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
-% --- End of Author Metadata ---
-\title{Divergence Of Formality in Experimentation Protocol Between Software Engineering And Other Traditional Disciplines}%\titlenote{}}
-%\title{Seeking for the formalization of Experimentation in Software Engineering: An Empirical Study\titlenote{}}
-%\subtitle{[Extended Abstract]
-%\titlenote{A full version of this paper is available as
-%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
-%\LaTeX$2_\epsilon$\ and BibTeX} at
-%\texttt{www.acm.org/eaddress.htm}}}
-%
-% You need the command \numberofauthors to handle the 'placement
-% and alignment' of the authors beneath the title.
-%
-% For aesthetic reasons, we recommend 'three authors at a time'
-% i.e. three 'name/affiliation blocks' be placed beneath the title.
-%
-% NOTE: You are NOT restricted in how many 'rows' of
-% "name/affiliations" may appear. We just ask that you restrict
-% the number of 'columns' to three.
-%
-% Because of the available 'opening page real-estate'
-% we ask you to refrain from putting more than six authors
-% (two rows with three columns) beneath the article title.
-% More than six makes the first-page appear very cluttered indeed.
-%
-% Use the \alignauthor commands to handle the names
-% and affiliations for an 'aesthetic maximum' of six authors.
-% Add names, affiliations, addresses for
-% the seventh etc. author(s) as the argument for the
-% \additionalauthors command.
-% These 'additional authors' will be output/set for you
-% without further effort on your part as the last section in
-% the body of your article BEFORE References or any Appendices.
-
-\numberofauthors{3} %  in this sample file, there are a *total*
-% of EIGHT authors. SIX appear on the 'first-page' (for formatting
-% reasons) and the remaining two appear in the \additionalauthors section.
-%
-\author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
-% 1st. author
-\alignauthor
-Efraín R. Fonseca C.\\
-       \affaddr{Universidad de las Fuerzas Armadas ESPE}\\
-       \affaddr{Avda. General Rumiñahui s/n}\\
-       \affaddr{Sangolquí, Ecuador}\\
-       \email{erfonseca@espe.edu.ec}
-% 2nd. author
-\alignauthor
-Oscar Dieste\\
-       \affaddr{Universidad Polit\'ecnica de Madrid}\\
-       \affaddr{Boadilla del Monte, 28660}\\
-       \affaddr{Madrid, Spain}\\
-       \email{odieste@fi.upm.es}
-% 3rd. author
-%\alignauthor Alejandra Ponce\\
-%       \affaddr{Universidad de las Fuerzas Armadas ESPE}\\
-%       \affaddr{Avda. General Rumiñahui s/n}\\
-%       \affaddr{Sangolquí, Ecuador}\\
-%       \email{adponce@espe.edu.ec}
-%\and  % use '\and' if you need 'another row' of author names
-% 4th. author
-\alignauthor María Emilia Medina\\
-       \affaddr{Universidad de las Fuerzas Armadas ESPE}\\
-       \affaddr{Avda. General Rumiñahui s/n}\\
-       \affaddr{Sangolquí, Ecuador}\\
-       \email{memedina@espe.edu.ec}
-% 5th. author
-%\alignauthor Geovanny Raura\\
-%       \affaddr{Universidad de las Fuerzas Armadas ESPE}\\
-%       \affaddr{Avda. General Rumiñahui s/n}\\
-%       \affaddr{Sangolquí, Ecuador}\\
-%       \email{jgraura@espe.edu.ec}
-% 6th. author
-%\and
-%\alignauthor Natalia Juristo\\
-%       \affaddr{Universidad Polit\'ecnica de Madrid}\\
-%       \affaddr{Boadilla del Monte, 28660}\\
-%       \affaddr{Madrid, Spain}\\
-%       \email{natalia@fi.upm.es}\\
-%       \affaddr{~}\\
-%       \affaddr{University of Oulu}\\
-%       \affaddr{Oulu, Finland}\\
-%       \email{natalia.juristo@oulu.fi}
+\title{Divergence Of Formality in Experimentation Protocol Between Software Engineering And Other Traditional Disciplines%\thanks{Grants or other notes
+%about the article that should go on the front page should be
+%placed here. General acknowledgments should be placed at the end of the article.}
 }
-% There's nothing stopping you putting the seventh, eighth, etc.
-% author on the opening page (as the 'third row') but we ask,
-% for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
-%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
-%email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
-%(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
-%\date{30 July 1999}
-% Just remember to make sure that the TOTAL number of authors
-% is the number that will appear on the first page PLUS the
-% number that will appear in the \additionalauthors section.
+%\subtitle{Do you have a subtitle?\\ If so, write it here}
+
+%\titlerunning{Short form of title}        % if too long for running head
+
+\author{Efra{\'i}n R. Fonseca C.	\and
+        Oscar Dieste \and
+        Mar{\'i}a Emilia Medina					\and
+        Natalia Juristo
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Efra{\'i}n R. Fonseca C. \at
+              Universidad de las Fuerzas Armadas ESPE\\
+              %Avda. Gral. Rumi{\~n}ahui s/n\\
+              Sangolqu{\'i}, Ecuador\\
+              \email{erfonseca@espe.edu.ec}           %  \\
+             %\emph{Present address:} of F. Author  %  if needed
+           \and
+           Oscar Dieste \at
+               Universidad Polit{\'e}cnica de Madrid \\
+               Boadilla del Monte 28660\\
+               Madrid, Spain\\
+               \email{odieste@fi.upm.es}
+           \and
+           Mar{\'i}a Emilia Medina \at
+              Universidad de las Fuerzas Armadas ESPE\\
+              %Avda. Gral. Rumi{\~n}ahui s/n\\
+              Sangolqu{\'i}, Ecuador\\
+              \email{memedina@espe.edu.ec}
+           \and
+           Natalia Juristo \at
+               Universidad Polit{\'e}cnica de Madrid \\
+               Boadilla del Monte, 28660\\
+               Madrid, Spain\\
+               \email{natalia@fi.upm.es}\\
+               {~}\\
+               University of Oulu\\
+               Oulu, Finland\\
+               \email{natalia.juristo@oulu.fi}
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
 \maketitle
 
 \input{tex/abstract}
 
-% The code below should be generated by the tool at
-% http://dl.acm.org/ccs.cfm
-% Please copy and paste the code instead of the example below. 
-%
-\begin{CCSXML}
-<ccs2012>
- <concept>
-  <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>10003033.10003083.10003095</concept_id>
-  <concept_desc>Networks~Network reliability</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
-</ccs2012>  
-\end{CCSXML}
+%\begin{abstract}
+%Insert your abstract here. Include keywords, PACS and mathematical
+%subject classification numbers as needed.
+%\keywords{First keyword \and Second keyword \and More}
+% \PACS{PACS code1 \and PACS code2 \and more}
+% \subclass{MSC code1 \and MSC code2 \and more}
+%\end{abstract}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
-
-
-%
-% End generated code
-%
-
-%
-%  Use this command to print the description
-%
-\printccsdesc
-
-% We no longer use \terms command
-%\terms{Theory}
-
-\keywords{Software Engineering, Empirical Software Engineering, Experimentation in Software Engineering, Case Study}
-
+%All sections put here 
+%=========================
 \input{tex/introduction}
 
 \input{tex/background}
@@ -248,151 +154,87 @@ Oscar Dieste\\
 \input{tex/threats-to-validity}
 
 \input{tex/discussion-conclusions}
+%=========================
 
 
+%\section{Introduction}
+%\label{intro}
+%Your text comes here. Separate text sections with
+%\section{Section title}
+%\label{sec:1}
+%Text with citations \cite{RefB} and \cite{RefJ}.
+%\subsection{Subsection title}
+%\label{sec:2}
+%as required. Don't forget to give each section
+%and subsection a unique label (see Sect.~\ref{sec:1}).
+%\paragraph{Paragraph headings} Use paragraph headings as needed.
+%\begin{equation}
+%a^2+b^2=c^2
+%\end{equation}
 
-
-
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-%\begin{table}
-%\centering
-%\caption{Frequency of Special Characters}
-%\begin{tabular}{|c|c|l|} \hline
-%Non-English or Math&Frequency&Comments\\ \hline
-%\O & 1 in 1,000& For Swedish names\\ \hline
-%$\pi$ & 1 in 5& Common in math\\ \hline
-%\$ & 4 in 5 & Used in business\\ \hline
-%$\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
-%\hline\end{tabular}
-%\end{table}
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-%\begin{table*}
-%\centering
-%\caption{Some Typical Commands}
-%\begin{tabular}{|c|c|l|} \hline
-%Command&A Number&Comments\\ \hline
-%\texttt{{\char'134}alignauthor} & 100& Author alignment\\ \hline
-%\texttt{{\char'134}numberofauthors}& 200& Author enumeration\\ \hline
-%\texttt{{\char'134}table}& 300 & For tables\\ \hline
-%\texttt{{\char'134}table*}& 400& For wider tables\\ \hline\end{tabular}
-%\end{table*}
-% end the environment with {table*}, NOTE not {table}!
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
+% For one-column wide figures use
 %\begin{figure}
-%\centering
-%\includegraphics[height=1in, width=1in]{images/fly}
-%\caption{A sample black and white graphic
-%that has been resized with the \texttt{includegraphics} command.}
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+%  \includegraphics{example.eps}
+% figure caption is below the figure
+%\caption{Please write your figure caption here}
+%\label{fig:1}       % Give a unique label
 %\end{figure}
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
+%
+% For two-column wide figures use
 %\begin{figure*}
-%\centering
-%\includegraphics{images/flies}
-%\caption{A sample black and white graphic
-%that needs to span two columns of text.}
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+%  \includegraphics[width=0.75\textwidth]{example.eps}
+% figure caption is below the figure
+%\caption{Please write your figure caption here}
+%\label{fig:2}       % Give a unique label
 %\end{figure*}
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
+%
+% For tables use
+%\begin{table}
+% table caption is above the table
+%\caption{Please write your table caption here}
+%\label{tab:1}       % Give a unique label
+% For LaTeX tables use
+%\begin{tabular}{lll}
+%\hline\noalign{\smallskip}
+%first & second & third  \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%number & number & number \\
+%number & number & number \\
+%\noalign{\smallskip}\hline
+%\end{tabular}
+%\end{table}
 
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-%\begin{figure}
-%\centering
-%\includegraphics[height=1in, width=1in]{images/rosette}
-%\caption{A sample black and white graphic that has
-%been resized with the \texttt{includegraphics} command.}
-%\vskip -6pt
-%\end{figure}
-%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%
-%\
-%ACKNOWLEDGMENTS are optional
-\section{Acknowledgments}
-This section is optional; it is a location for you
-to acknowledge grants, funding, editing assistance and
-what have you.  In the present case, for example, the
-authors would like to thank Gerald Murray of ACM for
-his help in codifying this \textit{Author's Guide}
-and the \textbf{.cls} and \textbf{.tex} files that it describes.
 
+\begin{acknowledgements}
+Thanks et all.
+\end{acknowledgements}
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+\bibliographystyle{ieeetr}
+\bibliography{Bibliografia} % name your BibTeX data base
+
+% Non-BibTeX users please use
+%\begin{thebibliography}{}
 %
-% The following two commands are all you need in the
-% initial runs of your .tex file to
-% produce the bibliography for the citations in your paper.
-\bibliographystyle{abbrv}
-\bibliography{Bibliografia}  % sigproc.bib is the name of the Bibliography in this case
-% You must have a proper ".bib" file
-%  and remember to run:
-% latex bibtex latex latex
-% to resolve all references
+% and use \bibitem to create references. Consult the Instructions
+% for authors for reference list style.
 %
-% ACM needs 'a single self-contained file'!
-%
-%APPENDICES are optional
-%\balancecolumns
-%\appendix
-%Appendix A
-%\section{Headings in Appendices}
-%The rules about hierarchical headings discussed above for
-%the body of the article are different in the appendices.
-%In the \textbf{appendix} environment, the command
-%\textbf{section} is used to
-%indicate the start of each Appendix, with alphabetic order
-%designation (i.e. the first is A, the second B, etc.) and
-%a title (if you include one).  So, if you need
-%hierarchical structure
-%\textit{within} an Appendix, start with \textbf{subsection} as the
-%highest level. Here is an outline of the body of this
-%document in Appendix-appropriate form:
-%\subsection{Introduction}
-%\subsection{The Body of the Paper}
-%\subsubsection{Type Changes and  Special Characters}
-%\subsubsection{Math Equations}
-%\paragraph{Inline (In-text) Equations}
-%\paragraph{Display Equations}
-%\subsubsection{Citations}
-%\subsubsection{Tables}
-%\subsubsection{Figures}
-%\subsubsection{Theorem-like Constructs}
-%\subsubsection*{A Caveat for the \TeX\ Expert}
-%\subsection{Conclusions}
-%\subsection{Acknowledgments}
-%\subsection{Additional Authors}
-%This section is inserted by \LaTeX; you do not insert it.
-%You just add the names and information in the
-%\texttt{{\char'134}additionalauthors} command at the start
-%of the document.
-%\subsection{References}
-%Generated by bibtex from your ~.bib file.  Run latex,
-%then bibtex, then latex twice (to resolve references)
-%to create the ~.bbl file.  Insert that ~.bbl file into
-%the .tex source file and comment out
-%the command \texttt{{\char'134}thebibliography}.
-% This next section command marks the start of
-% Appendix B, and does not continue the present hierarchy
-%\section{More Help for the Hardy}
-%The sig-alternate.cls file itself is chock-full of succinct
-%and helpful comments.  If you consider yourself a moderately
-%experienced to expert user of \LaTeX, you may find reading
-%it useful but please remember not to change it.
-%\balancecolumns % GM June 2007
-% That's all folks!
+%\bibitem{RefJ}
+% Format for Journal Reference
+%Author, Article title, Journal, Volume, page numbers (year)
+% Format for books
+%\bibitem{RefB}
+%Author, Book title, page numbers. Publisher, place (year)
+% etc
+%\end{thebibliography}
+
 \end{document}
+% end of file template.tex
+
