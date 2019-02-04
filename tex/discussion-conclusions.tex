@@ -1,9 +1,12 @@
 \section{Discussion and Conclusions}\label{sec-discussion-conclusions}
 
-\begin{landscape}% Landscape page
-\centering % Center table
-	
-\begin{table}[]	
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% \usepackage{lscape}
+\begin{landscape}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llll}
 \hline
 \# & Hallazgos del estudio en SE & Hallazgos del estudio en biotecnologia & \# \\ \hline
@@ -13,7 +16,7 @@
 5 & Existen pocos libros de referencia acerca de experimentación en SE &  &  \\
  &  &  &  \\
  &  &  & 
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
-	
 \end{landscape}
