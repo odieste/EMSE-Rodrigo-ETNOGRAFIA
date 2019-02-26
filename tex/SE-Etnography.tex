@@ -4,56 +4,57 @@
 
 El estudio fue realizado en el Grupo de Investigación en Ingeniería de Software Experimental (GrISE) de la Universidad Politécnica de Madrid (UPM). GrISE es un grupo que puede considerarse representativo de la comunidad de ESE. El origen del grupo data de finales de los 90s, cuando fue fundado por N. Juristo, una investigadora reconocida en IS por su temprano libro (con A. Moreno) acerca de SE experimental \cite{Juristo2001} , además de sus contribuciones posteriores. El grupo cuenta con otros investigadores de dilatada trayectoria, tales como O. Dieste y S. Vegas. A lo largo de su historia, GrISE ha realizado varias familias de experimentos \cite{Basili1999-KnowledgeFamiliesExp}, en distintas temáticas: testing, requisitos y, más recientemente, test-driven development.
 
-El estudio se desarrolló por fases iteradas, tal y como se puede observar en la Figura \ref{fig-process-etnography-study1}. Las fases no se planificaron de antemano, sino que  que se plantearon sobre la base de los hallazgos obtenidos durante la investigación, tal y como describiremos a lo largo de esta sección. La descripción tendrá un carácter denso\footnote{A 'dense' or 'thick' description is a reporting style in Ethnography in which the research findings are explicitly related to their occurring context. A dense description faciliates the critical evaluation of the findings, e.g., their external validity, by enabling the comparison to other contexts. For instance, see \url{http://www.qualres.org/HomeThic-3697.html}.}, tal y como es habitual en Etnografía. El lector encontrará fragmentos subrayados; dichos fragmentos representan, en nuestra opinión, hallazgos importantes de la investigación etnográfica. Dichos hallazgos se recopilan y discuten en la Sección~\ref{tex/discussion-conclusions}.
+El estudio se desarrolló por fases iteradas, tal y como se puede observar en la Figura \ref{fig-process-etnography-study1}. Las fases no se planificaron de antemano, sino que  que se plantearon sobre la base de los hallazgos obtenidos durante la investigación, tal y como describiremos a lo largo de esta sección. La descripción tendrá un carácter denso\footnote{A 'dense' or 'thick' description is a reporting style in Ethnography in which the research findings are explicitly related to their occurring context. A dense description faciliates the critical evaluation of the findings, e.g., their external validity, by enabling the comparison to other contexts. For instance, see \cite{}\odnote{Usar la referencia \url{https://books.google.es/books?id=8BU63Xf2JGQC}, pp. 60-62}.}, tal y como es habitual en Etnografía. El lector encontrará fragmentos subrayados; dichos fragmentos representan, en nuestra opinión, hallazgos importantes de la investigación etnográfica. Dichos hallazgos se recopilan y discuten en la Sección~\ref{tex/discussion-conclusions}.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=3.2in]{images/Etnogaphy1-Process}
 	\caption{Fases del Estudio Etnográfico de la Experimentación en SE}
-	\label{fig-process-etnography-study1}\odnote{El título del tercer círculo me parece muy complejo. La lista de viñetas debería estar en un texto un poco más grande, para que se lea mejor.}
+	\label{fig-process-etnography-study1}\odnote{RODRIGO: El título del tercer círculo me parece muy complejo. La lista de viñetas debería estar en un texto un poco más grande, para que se lea mejor.}
 \end{figure}
 
 \subsection{First Approximation}\label{subsec-results-case1}
 
+ \odnote{RODRIGO: Hay que clarificar quienes somos "nosotros". En algún lugar debemos dejar dicho el modo en que vamos a denominar a los investigadores de los grupos y a los autores de esta investigación.}
+
 La primera actividad que realizamos fue entrevistar a los miembros del GrISE. El objetivo de las entrevistas era adquirir el conocimiento del grupo y volcarlo en modelos conceptuales, de una forma similar a la práctica de la Ingeniería del Conocimiento. 
 
-\odnote{No se si será necesario, pero proporcionemos cierto contexto:} {\color{green}Realizamos XXX entrevistas. A estas entrevistas acudieron....}
+\odnote{RODRIGO: Proporcionemos cierto contexto:} {\color{green}Realizamos XXX entrevistas. A estas entrevistas acudieron....}
 
-Pronto se evidenció que las entrevistas iban a ser insuficientes para alcanzar este objetivo. Los investigadores del GrISE nos proporcionaron cierto conocimiento explícito, en particular los componentes principales de un experimento (hipótesis, factor, nivel, etc.). Sin embargo, no fue posible profundizar demasiado más:
+Pronto se evidenció que las entrevistas iban a ser insuficientes para alcanzar este objetivo. Los miembros del GrISE nos proporcionaron cierto conocimiento explícito, en particular los componentes principales de un experimento (hipótesis, factor, nivel, etc.). Sin embargo, no resultó posible profundizar demasiado más:
+
+\odnote{OSCAR: Los {\color{blue}(?)} hay que procesarlos al final de la revisión. Quizás no sean hallazgos fidedignos.}
 
 \begin{itemize}
-\item Los investigadores del GrISE creían que el conocimiento que buscábamos podíamos adquirirlo por nosotros mismos en literatura que ellos consideraban estándar, e.g., \cite{Wohlin2000}.
-\item A medida que profundizábamos en algunas áreas, e.g., planificación experimental o gestión de datos, los investigadores necesitaban {\color{blue}(?)} \ul{apoyar su relato con ejemplos concretos}, que obtenían de su propio material experimental.
+
+\item Los miembros del GrISE creían que las entrevistas eran innecesarias, ya que el conocimiento que buscábamos podíamos adquirirlo por nosotros mismos en {\color{blue}(?)} \ul{literatura que ellos consideraban estándar}, e.g., \cite{Wohlin2000}.
+
+\item A medida que profundizábamos en algunas áreas, e.g., planificación experimental o gestión de datos, los miembros del GrISE necesitaban {\color{blue}(?)} \ul{apoyar su relato con ejemplos concretos}, que obtenían de su propio material experimental, lo que dificultaba la comunicación ya que nosotros desconocíamos dichos materiales.
+
 \end{itemize}
 
-El estudio de ambas fuentes nos pareció necesario para proseguir la interacción con los investigadores del GrISE.
+El estudio de ambas fuentes resultó imprescindible para proseguir la interacción con los miembros del GrISE.
 
 \subsubsection{Análisis de la literatura relevante}\label{subsubsec-study-literature}
 
-Los miembros del GrISE señalaron como {\color{blue}(39)} \ul{fuentes básicas de su proceso experimental los libros} by Wohlin et al. \cite{Wohlin2000} and Juristo \& Moreno. \cite{Juristo2001}. Los investigadores suplen la {\color{blue}(40)} \ul{carencia de textos de referencia para SE con reportes o artículos específicos}. Resultan especialmente relevantes para ellos los textos de Basili et al. \cite{Basili-1986-ESE} y Kitchenham et al. \cite{Kitchenham2002-GuideLinesESE}, los cuales representan recomendaciones tempranas acerca de cómo experimentar en SE. En el caso particular del GrISE, dado su interés por realizar replicaciones experimentales, resulta también especialmente relevante el trabajo de Basili et al. \cite{Basili1999-KnowledgeFamiliesExp}.
+Los miembros del GrISE señalaron como {\color{blue}(39)} \ul{fuentes básicas de su proceso experimental los libros} by Wohlin et al. \cite{Wohlin2000} and Juristo \& Moreno. \cite{Juristo2001}. El GrISE suple la {\color{blue}(40)} \ul{carencia de textos de referencia para SE con reportes o artículos específicos}. Resultan especialmente relevantes para ellos los textos de Basili et al. \cite{Basili-1986-ESE} y Kitchenham et al. \cite{Kitchenham2002-GuideLinesESE}, los cuales representan recomendaciones tempranas acerca de cómo experimentar en SE. En el caso particular del GrISE, dado su interés por realizar replicaciones experimentales, resulta también especialmente relevante el trabajo de Basili et al. \cite{Basili1999-KnowledgeFamiliesExp}.
 
-La literatura fue revisada en profundidad por los dos autores (E. Fonseca y E. Espinosa) sin formación experimental específica. El primer aspecto que nos llamó la atención fue la {\color{blue}(2)} \ul{diversidad terminológica con que las distintas fuentes se referían a actividades similares del proceso experimental}. Para nosotros, observadores sin conocimientos específicos de experimentación, la literatura parecería describir distintos tipos de experimentos, cada uno caracterizado por un proceso diferente. A modo de ejemplo, los materiales antes citados \cite{Wohlin2000,Juristo2001,Basili-1986-ESE,Kitchenham2002-GuideLinesESE} denominan las fases del proceso de experimentación en SE de formas diversas:
+La literatura fue revisada en profundidad por los dos investigadores principales (E. Fonseca y E. Espinosa). El primer aspecto que nos llamó la atención fue la {\color{blue}(2)} \ul{diversidad terminológica con que las distintas fuentes se referían a actividades similares del proceso experimental}. Para nosotros, observadores sin conocimientos específicos de experimentación, la literatura parecería describir distintos tipos de experimentos, cada uno caracterizado por un proceso diferente. A modo de ejemplo, los materiales antes citados \cite{Wohlin2000,Juristo2001,Basili-1986-ESE,Kitchenham2002-GuideLinesESE} denominan las fases del proceso de experimentación en SE de formas diversas:
 
 \begin{itemize}
 	\item Wohlin et al. \cite{Wohlin2000} \textquotedblleft proponen como fases del proceso experimental: Experiment idea, Experiment scoping, Experiment planning, Experiment operation, Analysis \& interpretation, Presentation \& package and Experiment report\textquotedblright.
 	\item Juristo \& Moreno \cite{Juristo2001}: \textquotedblleft Objective Definition, Design, Execution and Analysis\textquotedblright.
 	\item Basili et al. \cite{Basili-1986-ESE}: \textquotedblleft Definition, Planning, Operation, and Interpretation\textquotedblright.
-	\item Kitchenham et al. \cite{Kitchenham2002-GuideLinesESE}: \odnote {añadir}
+	\item Kitchenham et al. \cite{Kitchenham2002-GuideLinesESE}: \odnote {RODRIGO: Añadir}
 \end{itemize}
 
-Aunque los autores definen estas fases en detalle, la coincidencia en términos y descripción difiere mucho de uno a otro autor. Una vez adquiridos los conocimientos básicos acerca experimentación en SE es inmediato percibir las similitudes, pero aún así no está claro si los distintos autores están describiendo exactamente las mismas actividades.
+Aunque los autores definen estas fases en detalle, la coincidencia en términos y descripción difiere mucho de uno a otro autor. Una vez adquiridos conocimientos acerca experimentación en SE es inmediato percibir las similitudes, pero aún así {\color{blue}(?)} \ul{no está claro si los distintos autores están describiendo exactamente las mismas actividades}.
 
-Hemos buscado libros de texto complementarios a \cite{Wohlin2000,Juristo2001}, con la intención de verificar si la diversidad terminológica era un problema general, o estaba circunscrito a las fuentes recomendadas. Sólo hemos localizado la nueva edición del libro de Wohlin et al. \cite{Wohlin2012-Experimentation} sobre experimentación, y los libros especializados de Runeson et al. \cite{case-study-in-SE-Runenson-2012} y Kitchenham et al. \cite{Kitchenham-2015-Literature-Review-Book}. 
+Hemos buscado libros de texto complementarios a \cite{Wohlin2000,Juristo2001}, con la intención de verificar si la diversidad terminológica era un problema general, o estaba circunscrito a las fuentes recomendadas. Sólo hemos localizado la nueva edición del libro de Wohlin et al. \cite{Wohlin2012-Experimentation} sobre experimentación, y los libros especializados de Runeson et al. \cite{case-study-in-SE-Runenson-2012} y Kitchenham et al. \cite{Kitchenham-2015-Literature-Review-Book}. Preguntados a este respecto, los miembros del GrISE nos señalaron otras fuentes, tales como Box et al. \cite{Box2008}, Montgomery \& Runger \cite{montgomery-2010-applied-statistics} o \odnote{añadir \url{https://books.google.es/books?id=srb0a9fmMEoC}}, pero en seguida nos aclararon que se trataban de libros dirigidos más al análisis estadístico que a la planificación y diseño experimentales. En consecuencia, creemos poder afirmar que la {\color{blue}(5)} \ul{carencia de textos de referencia} es un aspecto característico de la experimentación en SE.
 
-Preguntados a este respecto, los miembros del GrISE nos señalaron otras fuentes, tales como Box et al. \cite{Box2008}, Montgomery \& Runger \cite{montgomery-2010-applied-statistics} o \odnote{añadir \url{https://books.google.es/books?id=srb0a9fmMEoC}}, pero en seguida nos aclararon que se trataban de libros dirigidos más al análisis estadístico que a la planificación y diseño experimentales. En consecuencia, creemos poder afirmar que la {\color{blue}(5)} \ul{carencia de textos de referencia} es un aspecto característico de la experimentación en SE.
-
-\odnote{Este número se refería a la diversidad terminológica en los reportes; hay que volver a introducirlo más adelante:}{\color{blue}(34)}.
-
-\odnote{No tengo claro qué hacer con este texto hasta el final de la sección, incluyendo la Fig~\ref{fig-conceptos-preliminar}.}
+\odnote{No tengo claro qué hacer con este texto hasta el final de la sección, incluyendo la Fig~\ref{fig-conceptos-preliminar}. Me da la impresión de que los modelos conceptuales pueden despistar al lector y, además, pueden criticarnos porque si no hay uniformidad, ¿Por qué la creamos nosotros? Por otra parte, noto que falta algún resultado que reportar, algo con lo que el lector pueda quedarse. ¿Quizás una referencia a la tabla final? Lo voy a dejar así por el momento.}
 
 \begin{tcolorbox}
-
-Esta situación acrecentó nuestra convicción respecto a que la \textit{diversidad terminológica} pudiera ser todavía mayor de la observada, incluyendo también una \textit{diversidad de aproximaciones y enfoques sobre la realización de experimentos}{\color{blue}(13)}.
 
 En definitiva, los libros y artículos estudiados propiciaron la adquisición del conocimiento específico referido a conceptos tales como: Experimento, Replicación, Síntesis, Hipótesis, Variables, Diseño Experimental, entre otros; lo cual permitió comenzar la organización de dichos conceptos en un modelo conceptual preliminar, tal y como muestra la Figura \ref{fig-conceptos-preliminar}.
 
@@ -75,6 +76,8 @@ Por lo tanto, fue preciso solicitar ayuda a los miembros del GrISE para acceder 
 
 Otro aspecto que nos llamó la atención en la revisión del material experimental, fue \textit{la extensión (entre 100 a 120 páginas) y complejidad del planteamiento de los experimentos}{\color{blue}(14)}. Estos documentos se caracterizan por tener una \textit{descripción general de las actividades a ser realizadas en el experimento}{\color{blue}(15)}, lo cual dificulta entender las particularidades que conlleva un experimento en la práctica; por otra parte, \textit{no dan una guía sobre el orden de ejecución de las actividades experimentales}{\color{blue}(16)}. Por ejemplo, encontramos planteamientos de experimentos que incluían un diseño experimental, mientras que otros no. Aquellos planteamientos con diseño experimental, no especifican el tipo de diseño que utilizan, solo indican su estructura y conformación; adicionalmente, estos diseños hacían referencia a términos totalmente diferentes a los identificados hasta el momento, y por ende difíciles de comprender, tales como: \textit{efecto del cansancio}, \textit{efecto del aprendizaje}{\color{blue}(19)}, etc.
 
+\odnote{Este número se refería a la diversidad terminológica en los reportes; hay que volver a introducirlo más adelante:}{\color{blue}(34)}.
+
 Poniendo en contraste la literatura y el material experimental revisados, encontramos definiciones similares con términos diferentes, mismos términos con definiciones diferentes, términos diferentes con definiciones diferentes referidos al mismo concepto, y mismos términos con definiciones similares. Con el propósito de mejorar el modelo conceptual que se venía estructurando, conservamos los conceptos que se manejan en el grupo, para el caso de los conceptos nuevos o con distinta terminología, se optó por utilizar los más comunes entre las fuentes revisadas. De acuerdo a estas consideraciones, se llegó a elaborar el modelo conceptual que se muestra en la Figura \ref{fig-conceptos-final-revision-fuentes}.
 
 \begin{figure}[htbp!]
@@ -88,6 +91,12 @@ Aunque en este punto creímos tener cierto nivel de conocimiento sobre la experim
 
 \subsection{Understanding The Experimental Process in SE}\label{subsec-second-aprox}
 El estudio del material experimental propio del grupo constituyó sin duda una fuente de información fundamental para averiguar cómo GrISE se enfrenta a la experimentación, máxime cuando refleja probablemente una gran cantidad de conocimiento tácito del grupo, gestado en más de una década de experimentación. Sin embargo, el conocimiento contenido en el material experimental no era muy detallado, dado que \textit{no presentaba una guía clara de cómo hacer un experimento}{\color{blue}(20)}; además, el estudio en este punto nos permitió confirmar que efectivamente \textit{existe una diversidad de aproximaciones y enfoques sobre la realización de experimentos} en SE encontrados en las distintas familias de experimentos que el GrISE mantiene.
+
+\begin{tcolorbox}
+
+Esta situación acrecentó nuestra convicción respecto a que la \textit{diversidad terminológica} pudiera ser todavía mayor de la observada, incluyendo también una \textit{diversidad de aproximaciones y enfoques sobre la realización de experimentos}{\color{blue}(13)}.
+
+\end{tcolorbox}
 
 En este punto, vimos que la revisión de la literatura y material experimental del GrISE ya no era una opción para adentrarnos en los detalles más granulares de la experimentación en SE; por lo tanto, consideramos al aprendizaje en la práctica como una opción, dado que posiblemente la ejercitación con material experimental específico, de la mano de la guía de los miembros del GrISE, constituiría el camino a la familiarización de su formato, uso, e incluso verificación de resultados; pero que especialmente, podría permitirnos la habituación con actividades propias de la experimentación, tales como: cálculo de medidas a partir de la raw-data contenida en los materiales, formateo de la raw-data para análisis estadístico, reproducción de resultados estadísticos a partir de las mediciones, recreación de gráficos y tablas estadísticas a partir de las mediciones, etc. Por lo tanto, con la guía de los miembros del GrISE seleccionamos el material de un experimento particular, para intentar recrearlo y aprender de la práctica en un entorno real.
 
