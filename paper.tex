@@ -69,6 +69,7 @@
 \usepackage{graphicx}
 \usepackage{lscape}
 \usepackage{caption}
+\usepackage[title]{appendix}
 
 \newcommand{\rodrinote}[1]{\textcolor{blue}{[RODRI:#1]}}
 \newcommand{\odnote}[1]{\textcolor{red}{[OD:#1]}}
@@ -234,6 +235,17 @@ Thanks et all.
 %Author, Book title, page numbers. Publisher, place (year)
 % etc
 %\end{thebibliography}
+
+\clearpage
+\onecolumn
+
+\begin{appendices}
+
+\appendixpage
+
+\input{tex/annex_models}
+
+\end{appendices}
 
 \end{document}
 % end of file template.tex
