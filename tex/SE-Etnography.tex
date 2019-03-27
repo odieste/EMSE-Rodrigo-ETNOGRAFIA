@@ -122,11 +122,26 @@ La medición de los resultados resultó más complicada. La raw data del experiment
 
 \odnote{RODRIGO: Matiza lo que quieras}Este procedimiento nos pareció en primera instancia discutible. Sin embargo, tras una discusión con S. Vegas, adquirió pleno sentido; los casos de prueba generados por los sujetos podían ser incompletos/incorrectos, pero aún así ensayar las condiciones de entrada adecuadas. Por este motivo, una evaluación experta de los casos de prueba era más fair que su ejecución. De nuevo, volvíamos a observar que {\color{blue}(13.2)} \ul{los procedimientos experimentales (en este caso la medición) dependían fuertemente de la tarea experimental, las cuales dependen a su vez del área de investigación}.
 
-Aún así {\color{blue}(?)} \ul{se produjo un cierto grado de ambigüedad en la generación del raw-data}. \odnote{RODRIGO: Es esto cierto?} Por el contrario, {\color{blue}(?)} \ul{los restantes pasos de la medición (cálculo de medidas a partir de la raw-data, y formateo de los datos para análisis) no implicaron incertidumbre alguna}; pudimos reproducir con éxito los mismos ficheros usados en el baseline experiment \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment}.
+\odnote{RODRIGO: Es esto cierto?}Los investigadores obtuvimos la raw data por separado. Determinar si un caso de prueba detectaba o no una falta implicaba interpretar el caso de prueba, por lo que la decisión final tenía un componente subjetivo. En una reunión posterior de consenso, constatamos diferencias entre la raw data obtenida por los dos investigadores. Las discrepancias pudieron ser resueltas por consenso, pero quedó de manifiesto {\color{blue}(?)} \ul{que la primera fase de la medición del experimento carecía de sistematicidad}. 
+
+Preguntados al respecto, los miembros del GrISE nos comentaron que era posible plantear procedimientos de medición más sistemáticos, pero que {\color{blue}(?)} \ul{en general la incertidumbre en la medición no podía ser eliminada completamente}. A modo de ejemplo, en la familia de experimentos de TDD, la medición fue realizada usando casos de prueba automatizados. Sin embargo, el diseño de los casos de prueba, el medidor, y el modo en que los casos de prueba se conectaban con el código fuente podían generar fuertes discrepancias entre las mediciones. El problema de la sistematicidad de las mediciones no era exclusivo de SE, sino que también aparecía en otras disciplinas como Psicología, y en buena parte se debía al problema de que {\color{blue}(?)} \ul{en SE (como en Psicología) trabajamos con constructos no observables (e.g., calidad) que se operacionalizan de modo no-estándar}, en lugar de métricas bien definidas como ocurre en otras áreas (e.g., longitud en Física).
+
+\odnote{RODRIGO: Hubo algún problema con una falta, que no estaba bien definida, o algo así?}En contrapartida, los restantes pasos de la medición (cálculo de medidas a partir de la raw-data, y formateo de los datos para análisis) no implicaron incertidumbre alguna; pudimos reproducir con éxito los mismos ficheros usados en el baseline experiment \cite{Juristo2012-EffectivenessWithinOutsideScopeExperiment}.
 
 \subsubsection{Análisis y reporte}\label{analisis-reporte-replicacion}
 
-No obstante, los resultados de la replicación tuvieron diferencias marcadas con respecto al experimento original, incluso existieron errores en el análisis de resultados; posiblemente debido a factores propios del contexto donde se llevó a cabo la replicación, o por falta de experiencia de quienes ejecutaron y analizaron los resultados de la replicación. Esto indica que el conocimiento más granular sobre la ejecución y análisis del experimento contenido en los lineamientos dados por los miembros del GrISE, al parecer no fue abstraído del todo, confirmándose que \textit{no existe una guía clara y auto sustentable que permita realizar una replicación literal, externa e independiente del experimento original, siendo necesaria la presencia de los experimentadores originales en todo el proceso de la replicación}{\color{blue}(29)}.
+\textcolor{red}{O. Dieste, que no ha realizado experimentos en testing, proporcionó soporte en el análisis y reporte de la replicación, ya que se trataba de temas que los investigadores (E. Fonseca y E. Espinosa) no conocían en aquel momento.}
+
+Los resultados de la replicación tuvieron diferencias marcadas con respecto al experimento original.  
+
+
+
+
+
+
+
+
+incluso existieron errores en el análisis de resultados; posiblemente debido a factores propios del contexto donde se llevó a cabo la replicación, o por falta de experiencia de quienes ejecutaron y analizaron los resultados de la replicación. Esto indica que el conocimiento más granular sobre la ejecución y análisis del experimento contenido en los lineamientos dados por los miembros del GrISE, al parecer no fue abstraído del todo, confirmándose que \textit{no existe una guía clara y auto sustentable que permita realizar una replicación literal, externa e independiente del experimento original, siendo necesaria la presencia de los experimentadores originales en todo el proceso de la replicación}{\color{blue}(29)}.
 
 \subsubsection{Evaluación de la observacion participativa}\label{evaluacion-observacion-participativa}
 
