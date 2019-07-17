@@ -1,45 +1,107 @@
 \section{Survey on Experimentation in Software Engineering}\label{sec-survey}
-Los resultados del estudio etnográfico sobre el proceso de experimentación que se realizó dentro del GrISE nos hicieron cuestionarnos lo siguiente:
+Como se indicó en la Sección \ref{sec-methology}, el survey pretende esclarecer si la praxis de la experimentación en SE realizada dentro de un grupo de investigación representativo, es común a la de la comunidad de ESE. Este propósito fue planteado en base a los resultados obtenidos del estudio etnográfico realizado dentro de dicho grupo de investigación. Más específicamente, los resultados nos motivaron a cuestionarnos si:
 
+\begin{itemize}
+	\item ¿Son habituales en la comunidad de ESE las fuentes de información sobre experimentación utilizadas en el grupo de investigación estudiado?
+	\item ¿Es común en la comunidad de ESE la terminología sobre experimentación empleada en el grupo de investigación estudiado?
+	\item ¿Es comparable la praxis de la experimentación en la comunidad de ESE (incluidos artefactos y materiales), con la observada en el grupo de investigación estudiado?
+	\item ¿Es similar la gestión del conocimiento concerniente a experimentación en SE de la comunidad ESE, con la realizada en el grupo de investigación estudiado?
+\end{itemize}
 
-
-El survey pretende esclarecer si las prácticas de la experimentación en SE realizadas dentro de un grupo de investigación representativo, son comunes a la realizadas en la comunidad de ESE, en particular se precisa conocer:
-
-\begin{enumerate}
-	\item The context on the SE experimentation 
-	\item The training and experience on SE experimentation
-	\item The SE experimentation process and activities known
-	\item The definition of roles in the SE experimentation process
-	\item The SE experimentation aspects that could be improved
-\end{enumerate}
-
+El cuestionario planteado en el survey justamente se enfocó en dar respuesta a estas interrogantes. Tras la aplicación del survey, los resultados se clasificaron en: (1) Demographic results, (2) Information resources and training for SE experimentation, (3) 	
+%\begin{enumerate}
+%	\item The context on the SE experimentation 
+%	\item The training and experience on SE experimentation
+%	\item The SE experimentation process and activities known
+%	\item The definition of roles in the SE experimentation process
+%	\item The SE experimentation aspects that could be improved
+%\end{enumerate}
 
 \subsection{Demographic results}
-La encuesta fue promovida durante The 2016 Empirical Software Engineering International Week (ESEIW) realizada en Ciudad Real de España. Este evento reúne a los investigadores más representativos de la comunidad de Ingeniería de Software Empícia. La encuesta fue instrumentada por medio de herramientas en línea; puntualmente, a través de google forms. Como resultado se obtuvo la participación de 27 investigadores de diferentes partes del mundo (ver Figura 1), siendo los investigadores de USA (15\%), Brazil (15\%) e Italia (11\%) los que más representación tuvieron.
+La encuesta fue promovida durante The 2016 Empirical Software Engineering International Week (ESEIW) realizada en Ciudad Real de España. Este evento reúne a los investigadores más emblemáticos de la comunidad de ESE. La encuesta fue instrumentada a través de google forms. 27 investigadores de diferentes partes del mundo participaron en el survey (ver Fig. \ref{fig-nationality-respondents}), siendo los investigadores de USA (15\%), Brazil (15\%) e Italia (11\%) los que más representación tuvieron.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=3.4in]{Images/Nationality-respondents}
 	\caption{Nationality of survey's respondents}
-	\label{fig-conceptos-exp}
+	\label{fig-nationality-respondents}
 \end{figure}
 
-Es preciso mencionar que todos quienes respondieron el survey tienen un título académico en ciencias de la computación, de los cuales en su mayoría son académicos (81.48\%) y muy pocos se identificaron como profesionales de la industria de software (7.41\%); lo que al parecer indica que el interés de la industria en estudios empíricos es bajo. Por otra parte, la edad de la mayoría de los participantes oscila entre 30-39 años (40.74\%) y los 40-49 años (37.04\%), lo que corrobora la juventud de esta temática de investigación.
+Es preciso mencionar que todos quienes respondieron el survey tienen un título académico en ciencias de la computación, de los cuales en su mayoría son académicos (81.48\%) y muy pocos se identificaron como profesionales de la industria de software (7.41\%); lo que al parecer indica {\color{green}(SC1)} \ul{que el interés de la industria en estudios empíricos es bajo}. Por otra parte, la edad de la mayoría de los participantes oscila entre 30-39 años (40.74\%) y los 40-49 años (37.04\%), {\color{green}(SC2)} \ul{lo que corrobora la juventud de esta temática de investigación}.
 
-\subsection{Studies in experimentation}
-Han pasado varias décadas desde que la experimentación y otros métodos empíricos han sido considerados dentro de la SE como mecanismos para evaluar las técnicas y métodos de desarrollo existentes, con el propósito de mejorar la calidad del producto software. Esta situación ha determinado que los investigadores en SE han debido adquirir una formación suficiente para al menos leer con aprovechamiento fuentes de carácter experimental.
+\subsection{Information Resources and Training of SE experimentation}
+\subsubsection{Information Resources for SE Experimentation}
+En lo que respecta a las fuentes de información utilizadas para la formación de los investigadores en experimentación en SE, la encuesta mostró que son escasas, con el atenuante que solo pocas de ellas son conocidas por los investigadores (ver Fig. \ref{fig-resources-training}).
 
-La formación en experimentación se ha basado principalmente en distintos mecanismos orientados en la extracción de información y en la información de distintas fuentes. De acuerdo con la encuesta se determinó que los investigadores se han formado en experimentación orientada a la SE (92.59\%); y mínimamente hacia otras disciplinas (7.41\%). El tiempo de formación de los investigadores encuestados ha sido variada: el 26\% indican que se han formado al menos por un año, el  15\%  por uno y dos años y la mayoría (59\%) por más de dos años. No obstante, la formación recibida ha sido informal, ya que han debido aprender por medio de distintos mecanismos y fuentes de información complementarios. De hecho, un alto porcentaje de encuestados (66.67\%) indican que su formación se basó en la explicación de otros investigadores experimentados y en la práctica. Así mismo, indican que han recibido cursos formales (59.26\%), auto aprendizaje a partir de textos de experimentación (51.85\%) y de material experimental (48.15\%). La informalidad del aprendizaje a su vez podría ser la causa de una variedad de aproximaciones y enfoques sobre la realización de experimentos.
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=18cm]{Images/Experimentation-training-resources}
+	\caption{Resources used to SE experimentation training}
+	\label{fig-resources-training}
+\end{figure*}
 
-Los tópicos abordados en la formación de los investigadores encuestados son variados. Un 45\% de los investigadores coincidió en haber estudiado el proceso de experimentación, un 22\% indica haber estudiado métodos empíricos tales como: experimentos controlados, replicación de experimentos, estudios de caso, encuestas y revisión sistemática de literatura. Un menor porcentaje de investigadores (7\%) indican haber recibido formación en diseño experimental. Es preciso mencionar que un porcentaje considerable de investigadores (19\%) no indican los tópicos en los que se basó su formación en experimentación, lo que confirma la informalidad en la que los investigadores han aprendido sobre experimentación. De forma más detallada la Figura 2 muestra los tópicos específicos que han sido abordados en la formación de los investigadores encuestados.
+Los encuestados indican que el libro de Wohlin et al. es el más popular entre los investigadores de SE (66.67\%), mientras que los libros de Juristo et al. y Runenson et al. son populares en un 14.81\% de los encuestados. Es preciso mencionar que un alto porcentaje de encuestados no indica cuales fueron sus fuentes de información en su formación en SE experimentation.
 
-%
-%
-%
-%
-%
-%
-%
+\subsubsection{Training fo SE Experimentation}
+Han pasado varias décadas desde que la experimentación y otros métodos empíricos han sido considerados dentro de la SE para evaluar los mecanismos de desarrollo de software existentes, con el propósito de mejorar la calidad del producto software. Esta situación ha obligado a los investigadores a adquirir una formación suficiente para al menos leer con aprovechamiento fuentes de carácter experimental.
+
+La formación en experimentación se ha basado principalmente en distintos mecanismos orientados en la extracción de información y en la información de distintas fuentes. De acuerdo con la encuesta se determinó que los investigadores se han formado en experimentación orientada a la SE (92.59\%); y mínimamente hacia otras disciplinas (7.41\%). El tiempo de formación de los investigadores encuestados ha sido variada: el 26\% indican que se han formado al menos por un año, el  15\%  por uno y dos años y la mayoría (59\%) por más de dos años. No obstante, la formación recibida ha sido informal, ya que han debido aprender por medio de distintos mecanismos y fuentes de información complementarios. De hecho, un alto porcentaje de encuestados (66.67\%) indican que su formación se basó en la explicación de otros investigadores experimentados y en la práctica. Así mismo, indican que han recibido cursos formales (59.26\%), auto aprendizaje a partir de textos de experimentación (51.85\%) y de material experimental (48.15\%). La informalidad del aprendizaje a su vez podría ser la causa de una {\color{green}(SC3)} \ul{variedad de aproximaciones y enfoques sobre la realización de experimentos}.
+
+Los tópicos abordados en la formación de los investigadores encuestados son variados. Un 45\% de los investigadores coincidió en haber estudiado el proceso de experimentación, un 22\% indica haber estudiado métodos empíricos tales como: experimentos controlados, replicación de experimentos, estudios de caso, encuestas y revisión sistemática de literatura. Un menor porcentaje de investigadores (7\%) indican haber recibido formación en diseño experimental. Es preciso mencionar que un porcentaje considerable de investigadores (19\%) no indican los tópicos en los que se basó su formación en experimentación, lo que confirma {\color{green}(SC4)} \ul{la informalidad en la que los investigadores han aprendido sobre experimentación}. De forma más detallada la Figura \ref{fig-topics-training} muestra las temáticas específicas consideradas en la formación de los investigadores encuestados.
+
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=18cm]{Images/Topics-SE-experimentation-training}
+	\caption{Topics considered on SE experimentation training}
+	\label{fig-topics-training}
+\end{figure*}
+
+Cuando los encuestados fueron indagados sobre la forma en la que aprendieron sobre experimentación en SE nos sorprendió que casi un 60\% no respondió, lo cual nos induce a pensar que {\color{green}(SC5)} \ul{los investigadores en SE no tienen claro el proceso por el cual obtuvieron el conocimiento para experimentar}. Del 40\% de respuestas vimos que los investigadores aprendieron de experimentación principalmente leyendo reportes experimentales notables (25.93\%), pidiendo recomendaciones de otros investigadores expertos en experimentación (18.52\%) y leyendo libros de experimentación de uso cotidiano en la comunidad (14.81\%), lo que nos da indicios para pensar que {\color{green}(SC6)} \ul{estos libros son muy generales y han sido necesarias otras fuentes para que los investigadores alcancen el conocimiento para experimentar en SE}. La Fig. \ref{fig-way-researchers-learn} muestra más en detalle los mecanismos utilizados por los investigadores en SE para aprender de experimentación.
+
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=10cm]{Images/Way-researchers-learn-SE-experimentation}
+	\caption{The way in which researchers learn SE experimentation}
+	\label{fig-way-researchers-learn}
+\end{figure*}
+
+Para alcanzar el conocimiento en experimentación los investigadores en SE han interactuado con las fuentes y mecanismos mencionados durante un tiempo considerable, tal es así que un 33\% lo han hecho de 5 a 10 años, un 26\% por más de 10 años, un 22\% por menos de 2 años y un 19\% de entre 2 a 5 años; de hecho, un 70\% de los encuestados han participado como investigadores en experimentos controlados o quasi-experimentos. No obstante, 8 investigadores (30\%) afirman no haber participado en la realización de un experimento, lo cual llama la atención y podría deberse {\color{green}(SC7)} \ul{a la complejidad que representa llevar a cabo un experimento}. Del 70\% de investigadores que han participado en la experimentación en SE, un 22\% lo hecho por más de 10 años, un número similar entre 5 a 10 años, un 15\% por menos de dos años y un 11\% entre 2 a 5 años.
+
+\subsubsection{Use of Other Empiricial Methods in SE}
+Aunque la realización de experimentos controlados lidera en la comunidad ESE (66.67\%), parece ser que se está masificando la utilización de otros métodos empíricos, lo que indica que se está apostando a la adopción del método científico en la SE (ver Fig. \ref{fig-other-empirical-methods-SE}).
+
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=10cm]{Images/Other-Empirical-Methods-SE}
+	\caption{Application of Other Empirical Methods in SE}
+	\label{fig-other-empirical-methods-SE}
+\end{figure*}
+
+Los métodos que también son aplicados en un número considerable son los quasi-experimentos (44.44\%), seguidos de las encuestas (55.56\%) y los estudios de caso (48.15\%). No obstante, un 29\% de encuestados no indican el tipo de estudios empíricos en los que han participado.
+
+\subsection{Communication Regarding SE Experimentation Within the ESE Community}
+
+\subsection{SE Experimentation Praxis}
+
+\subsection{Knowledge Management Regarding SE Experimentation}
+\subsubsection{Purpose of SE Experimentation}
+Todo indica que el propósito de la experimentación es muy claro en otras disciplinas experimentales, dados los hallazgos que han alcanzado a partir de la experimentación; no obstante, en SE no lo es del todo. Efectivamente la mayoría de investigadores encuestados (62.96\%) indican que la experimentación esta orientada a la creación de conocimiento en base a datos empíricos y a múltiples replicaciones, con el propósito de ser transferido a la industria y a la academia; sin embargo, un 33.33\% no indican cual es el propósito de hacer experimentos en SE, de la mano de otro 25.93\% que también responde que los experimentos sirven para ganar conocimiento acerca de un fenómeno bajo estudio y para publicar eventualmente los resultados de experimentos aislados (ver Fig. \ref{Purpose-SE-Experiments}).
+
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=12cm]{Images/Purpose-SE-Experiments}
+	\caption{Purpose of SE Experiments}
+	\label{fig-Purpose-SE-Experiments}
+\end{figure*}
+
+Estas cifras se corroboran al indagar sobre las situaciones en las cuales un experimento es seleccionado como método de investigación (ver Fig. 7), lo que no fue respondido por un 40.74\% de los encuestados. No obstante, quienes respondieron tuvieron criterios divididos: Un 18.52\% dijo que un experimento se realiza para aislar un fenómeno de interés o para confirmar un tipo específico de hipótesis; mientras que un 14.81\% indicó que se utiliza para comparar dos cosas o para investigar una relación causa-efecto. Minoritariamente hubo investigadores que indicaron que un experimento se realiza dependiendo de la pregunta de investigación planteada (11.11\%), como prueba de concepto (3.7\%) y cuando una replicación es posible (3.7\%). Estos resultados indican que la experimentación en SE no persigue el mismo fin que las disciplinas experimentales tradicionales.
+
+\begin{figure*}[htbp!]
+	\centering
+	\includegraphics[width=12cm]{Images/Purpose-SE-Experiments}
+	\caption{Reasons why an Experiment is Selected as Research Method}
+	\label{fig-Purpose-SE-Experiments}
+\end{figure*}
 
 \subsection{Conclusiones}
 
