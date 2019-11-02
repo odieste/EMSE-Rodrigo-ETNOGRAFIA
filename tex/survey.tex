@@ -1,9 +1,9 @@
 \section{Survey on Experimentation in Software Engineering}\label{sec-survey}
-En base a los resultados del estudio entnográfico de la experimentación en SE (Sección \ref{sec-methology}), nos preguntamos si la praxis de la experimentación en SE realizada dentro de un grupo de investigación representativo es común a la de la comunidad de ESE. Más específicamente, nos cuestionamos si:
+En base a los resultados del estudio entnográfico de la experimentación en SE (Sección \ref{sec-methology}), nos preguntamos si la praxis de la experimentación en SE realizada dentro de un grupo de investigación representativo coincide con la comunidad de ESE. Más específicamente, nos cuestionamos si:
 
 \begin{itemize}
 	\item ¿Se ha formado la comunidad de ESE de modo similar al grupo de investigación estudiado?
-	\item ¿Son comunes los materiales de aprendizaje utilizados por comunidad ESE y el grupo de investigación estudiado?
+	\item ¿Son comunes los materiales de aprendizaje utilizados por la comunidad ESE y el grupo de investigación estudiado?
 	\item ¿Existe diversidad terminológica sobre experimentación en la comunidad de ESE?
 	\item ¿Existe diversidad operativa?
 	\item ¿Existen roles asociados a la realización de tareas particulares?
@@ -19,26 +19,23 @@ El cuestionario planteado en el survey justamente se enfocó en dar respuesta a e
 	\label{fig-nationality-respondents}
 \end{figure}
 
-Todos quienes respondieron el survey tienen un título académico en ciencias de la computación. En su mayoría son académicos (81.48\%). Muy pocos se identificaron como profesionales de la industria de software (7.41\%); \ul{lo que da a pensar que} {\color{green}(SC1)} \begin{tcolorbox} \ul{el interés de la industria en estudios empíricos es bajo}. Por otra parte, la edad de la mayoría de los participantes oscila entre 30-39 años (40.74\%) y los 40-49 años (37.04\%), esto corrobora {\color{green}(SC2)} \ul{la juventud de la experimentación en SE.}\end{tcolorbox}
+Todos quienes respondieron el survey tienen un título académico en ciencias de la computación. En su mayoría son académicos (81.48\%). Muy pocos se identificaron como profesionales de la industria de software (7.41\%); lo que da a pensar que el interés de la industria en estudios empíricos es bajo. La edad de la mayoría de los participantes oscila entre 30-39 años (40.74\%) y los 40-49 años (37.04\%), esto corrobora la juventud de la experimentación en SE. Estos datos indican que la muestra de investigadores encuestados es la adecuada, ya que se trata de investigadores empíricos en su mayor parte, lo cual es el peril más habitual de investigadores en SE.
 
 Aunque los experimentos controlados son el método más comúnmente utilizado en la comunidad ESE (66.67\%), está aumentando la utilización de otros métodos empíricos, tales como cuasi-experimento, survey, case study, etc.; lo cual representa, en nuestra opinión, un signo de madurez de la aplicación del método científico en la SE (ver Fig. \ref{fig-other-empirical-methods-SE}). En otras palabras: En ESE disponemos de guidelines para aplicar distintos métodos empíricos (e.g., el libro de Runenson \cite{Runenson-2012-SE-case-study} para case studies), y escogemos un método u otro en función del objetivo de la investigación.
 
-\begin{figure*}[htbp!]
-	\centering
-	\includegraphics[width=10cm]{Images/Other-Empirical-Methods-SE}
-	\caption{Application of Other Empirical Methods in SE}
-	\label{fig-other-empirical-methods-SE}
-\end{figure*}
+%\begin{figure*}[htbp!]
+%	\centering
+%	\includegraphics[width=10cm]{Images/Other-Empirical-Methods-SE}
+%	\caption{Application of Other Empirical Methods in SE}
+%	\label{fig-other-empirical-methods-SE}
+%\end{figure*}
 
 Los métodos que también son aplicados habitualmente son los cuasi-experimentos (44.44\%), seguidos de las encuestas (55.56\%) y los estudios de caso (48.15\%).
 
-%Según Oscar algo tenemos que decir al final acerca de las nos respuestas ¿significa algo? ¿Dificultad de comunicación? ¿Problems tecnológicos? ¿Nos sugieren algo las respuestas abiertas (texto plano)?
-
 \subsection{Experimental training}
+Los investigadores se han formado principalmente en experimentación orientada a la SE (92.59\%), y mínimamente en otras disciplinas (7.41\%). El tiempo de formación de los investigadores ha sido variado: el 26\% indican que se han formado al menos por un año, el  15\%  entre uno y dos años, y la mayoría (59\%) por más de dos años. No obstante, {\color{green}(SC1)} \ul{la formación recibida por los investigadores en SE ha sido informal}, ya que han debido aprender utilizando distintos mecanismos y fuentes de información complementarios. Un alto porcentaje de encuestados (66.67\%) indican que su formación se basó en la práctica, y en el aprendizaje de la mano de investigadores con experiencia en el campo. Así mismo, indican que han recibido cursos formales (59.26\%), auto aprendizaje a partir de textos de experimentación (51.85\%) y de material experimental (48.15\%). 
 
-Los investigadores se han formado principalmente en experimentación orientada a la SE (92.59\%); y mínimamente en otras disciplinas (7.41\%). El tiempo de formación de los investigadores ha sido variada: el 26\% indican que se han formado al menos por un año, el  15\%  entre uno y dos años, y la mayoría (59\%) por más de dos años. No obstante, la formación recibida ha sido informal, ya que han debido aprender utilizando distintos mecanismos y fuentes de información complementarios. Un alto porcentaje de encuestados (66.67\%) indican que su formación se basó en la práctica, y en el aprendizaje de la mano de investigadores con experiencia en el campo. Así mismo, indican que han recibido cursos formales (59.26\%), auto aprendizaje a partir de textos de experimentación (51.85\%) y de material experimental (48.15\%). \begin{tcolorbox}Lo que motiva a pensar que la informalidad del aprendizaje podría propiciar una {\color{green}(SC3)} \ul{diversidad de aproximaciones y enfoques sobre la realización de experimentos}, lo que en efecto fue corroborado.\end{tcolorbox}
-
-Los tópicos abordados en la formación de los investigadores encuestados son variados. Un 45\% de los investigadores coincidió en haber estudiado el proceso de experimentación, un 22\% indica haber estudiado métodos empíricos tales como: experimentos controlados, replicación de experimentos, estudios de caso, encuestas y revisión sistemática de literatura. Un menor porcentaje de investigadores (7\%) indican haber recibido formación en diseño experimental. La Figura \ref{fig-topics-training} muestra las temáticas específicas reportadas por los investigadores encuestados. Es relevante mencionar que un porcentaje considerable de investigadores (19\%) no indican los tópicos en los que se basó su formación en experimentación, lo que confirma {\color{green}(SC4)} \ul{la informalidad en la que los investigadores han aprendido sobre experimentación}.
+Los tópicos abordados en la formación de los investigadores encuestados son variados. Un 45\% de los investigadores coincidió en haber estudiado el proceso de experimentación, un 22\% indica haber estudiado métodos empíricos tales como: experimentos controlados, replicación de experimentos, estudios de caso, encuestas y revisión sistemática de literatura. Un menor porcentaje de investigadores (7\%) indican haber recibido formación en diseño experimental. La Figura \ref{fig-topics-training} muestra las temáticas específicas reportadas por los investigadores encuestados. Es relevante mencionar que un porcentaje considerable de investigadores (19\%) no indican los tópicos en los que se basó su formación en experimentación. Tal diferencia sugiere {\color{green}(SC2)} \ul{una diversidad de aproximaciones y enfoques sobre la realización de experimentos}.
 
 \begin{figure*}[htbp!]
 	\centering
@@ -49,7 +46,7 @@ Los tópicos abordados en la formación de los investigadores encuestados son vari
 
 \odnote{En los párrafos anteriores se habla de la práctica, y también en los siguientes. Cuáles son las diferencias entre ambos textos?? Deben estar claras porque si no es difícil escribir una conclusión clara.}
 
-No obstante, cuando los encuestados fueron indagados específicamente sobre la forma en la que aprendieron sobre experimentación en SE en la práctica nos sorprendió que casi un 60\% no respondió, lo cual podría indicar que {\color{green}(SC5)} \ul{los investigadores en SE no tienen claro el proceso por el cual obtuvieron el conocimiento para experimentar}. Del 40\% de respuestas vimos que los investigadores aprendieron a experimentar en la práctica principalmente leyendo reportes experimentales notables (25.93\%), pidiendo recomendaciones de investigadores expertos en experimentación (18.52\%) y leyendo libros de experimentación de uso cotidiano en la comunidad (14.81\%), lo que induce a pensar que {\color{green}(SC6)} \ul{los libros existentes no son suficientes y han sido necesarias otras fuentes para complementar el conocimiento de los investigadores sobre experimentación en SE}. La Fig. \ref{fig-way-researchers-learn} muestra más en detalle los mecanismos utilizados por los investigadores en SE para aprender de experimentación.
+No obstante, cuando los encuestados fueron indagados específicamente sobre la forma en la que aprendieron sobre experimentación en SE en la práctica nos sorprendió que casi un 60\% no respondió, lo cual podría indicar que {\color{green}(SC4)} \ul{los investigadores en SE no son en general conscientes de la existencia de un proceso experimental explícito}. Del 40\% de respuestas vimos que los investigadores aprendieron a experimentar en la práctica principalmente leyendo reportes experimentales notables (25.93\%), pidiendo recomendaciones de investigadores expertos en experimentación (18.52\%) y leyendo libros de experimentación de uso cotidiano en la comunidad (14.81\%), lo que induce a pensar que {\color{green}(SC6)} \ul{los libros existentes no son suficientes y han sido necesarias otras fuentes para complementar el conocimiento de los investigadores sobre experimentación en SE}. La Fig. \ref{fig-way-researchers-learn} muestra más en detalle los mecanismos utilizados por los investigadores en SE para aprender de experimentación.
 
 \begin{figure*}[htbp!]
 	\centering
@@ -58,10 +55,9 @@ No obstante, cuando los encuestados fueron indagados específicamente sobre la fo
 	\label{fig-way-researchers-learn}
 \end{figure*}
 
-Para alcanzar conocimiento en experimentación los investigadores en SE han requerido un tiempo considerable. Un 33\% lo han hecho de 5 a 10 años, un 26\% por más de 10 años, un 22\% por menos de 2 años y un 19\% de entre 2 a 5 años; de hecho, un 70\% de los encuestados han participado como investigadores en experimentos controlados o quasi-experimentos. No obstante, 8 investigadores (30\%) afirman no haber participado en la realización de un experimento. {\color{green}(SC7)} \ul{Resulta hasta cierto punto normal el alto tiempo invertido para alcanzar el conocimiento en experimentación de los investigadores, ya que su formación ha sido eminentemente práctica}. Del 70\% de investigadores que han participado en la experimentación en SE, un 22\% lo a hecho por más de 10 años, un número similar entre 5 a 10 años, un 15\% por menos de dos años y un 11\% entre 2 a 5 años.
+Para alcanzar conocimiento en experimentación los investigadores en SE han requerido un tiempo considerable. Un 33\% lo han hecho de 5 a 10 años, un 26\% por más de 10 años, un 22\% por menos de 2 años y un 19\% de entre 2 a 5 años; de hecho, un 70\% de los encuestados han participado como investigadores en experimentos controlados o quasi-experimentos. No obstante, 8 investigadores (30\%) afirman no haber participado en la realización de un experimento. {\color{green}(SC7)} \ul{Resulta hasta cierto punto normal el alto tiempo invertido para alcanzar el conocimiento en experimentación de los investigadores, ya que su formación ha sido eminentemente práctica} y no en base a libros o manuales. Del 70\% de investigadores que han participado en la experimentación en SE, un 22\% lo a hecho por más de 10 años, un número similar entre 5 a 10 años, un 15\% por menos de dos años y un 11\% entre 2 a 5 años.
 
 \subsection{Training materials}
-
 Por training materials, nos referimos a los libros, artículos, etc., que han sido utilizadas por los investigadores para su formación. La encuesta mostró que son escasas, por la simple razón de que pocas de ellas son conocidas por los investigadores (ver Fig. \ref{fig-resources-training}).
 
 \begin{figure*}[htbp!]
@@ -71,25 +67,20 @@ Por training materials, nos referimos a los libros, artículos, etc., que han sid
 	\label{fig-resources-training}
 \end{figure*}
 
-Los encuestados indican que el libro de Wohlin et al. \cite{Wohlin2012-Experimentation} es el más popular entre los investigadores de SE (67\%), mientras que los libros de Juristo et al. \cite{Juristo-2001-SE-experimentation} y Runenson et al. \cite{Runenson-2012-SE-case-study} le siguen en popularidad en un 15\% de los casos. Es preciso indicar que un alto porcentaje de encuestados (29\%) no indica cuales fueron las fuentes utilizadas en su formación en SE experimentation, lo que podría justificarse por la {\color{green}(SC8)} \ul{carencia de sistematicidad de las fuentes utilizadas para el aprendizaje, esto es variedad y poca comprensibilidad}.
+Los encuestados indican que {\color{green}(SC6)} \ul{el libro de Wohlin et al.} \cite{Wohlin2012-Experimentation} \ul{es el más popular entre los investigadores de SE (67\%), mientras que los libros de Juristo et al.} \cite{Juristo-2001-SE-experimentation} \ul{y Runenson et al.} \cite{Runenson-2012-SE-case-study} \ul{le siguen en popularidad en un 15\% de los casos}. Es preciso indicar que un alto porcentaje de encuestados (29\%) no indica cuales fueron las fuentes utilizadas en su formación en SE experimentation, lo que podría justificarse por la {\color{green}(SC8)} \ul{existencia de fuentes complementarias, como los reportes experimentales o artículos específicos}.
 
 \subsubsection{Terminological diversity}
-
 Los hallazgos obtenidos en el estudio etnográfico sugieren que la manera en que los investigadores adquirieron el conocimiento de experimentación representa a una de las principales causas de la diversidad conceptual y operativa observada. La variedad en las fuentes y tipos de formación en experimental SE sugieren que la diversidad terminológica debería aparecer también en la generalidad de investigadores de experimental SE.
 
-A este respecto, el survey no ha pretendido ser comprehensivo. Nos hemos limitado a realizar probes sobre algunos conceptos, y observar los resultados. En relación a lo dicho, cuando se indagó sobre ¿Qué palabra usa usted para referirse al proceso donde se definen los detalles del experimento y se evalúan las amenazas a la validez?, el 48\% de encuestados no respondió, un 26\% citó el término \textquotedblleft Planning\textquotedblright, un 18\% a \textquotedblleft Design\textquotedblright, un 4\% a \textquotedblleft Experiment setting\textquotedblright, y un 4\% a \textquotedblleft Guideline\textquotedblright. Solo en muy pocas preguntas de este estilo se notó consenso. Por ejemplo, cuando se preguntó ¿Qué palabra usa para referirse al proceso en el que se estudian los datos experimentales o las métricas, probablemente utilizando métodos estadísticos?, el 37\% citó el término \textquotedblleft Data Analysis\textquotedblright.
+A este respecto, el survey se ha limitado a indagar sobre ciertos conceptos que consideramos básicos, y observar los resultados. Por ejemplo, cuando se indagó sobre ¿Qué palabra usa usted para referirse al proceso donde se definen los detalles del experimento y se evalúan las amenazas a la validez?, el 48\% de encuestados no respondió, un 26\% citó el término \textquotedblleft Planning\textquotedblright, un 18\% a \textquotedblleft Design\textquotedblright, un 4\% a \textquotedblleft Experiment setting\textquotedblright, y un 4\% a \textquotedblleft Guideline\textquotedblright. Solo en muy pocas preguntas de este estilo se notó consenso. Por ejemplo, cuando se preguntó ¿Qué palabra usa para referirse al proceso en el que se estudian los datos experimentales o las métricas, probablemente utilizando métodos estadísticos?, el 37\% citó el término \textquotedblleft Data Analysis\textquotedblright.
 
-La diversidad conceptual fue notoria en el conjunto de preguntas enfocadas en la conceptualización de la experimentación. Por ejemplo, cuando se les pidió definir el concepto de: \textquotedblleft Selección de sujetos\textquotedblright, casi un 70\% de los encuestado no respondió, y del 30\% de respuestas obtenidas, ninguna coincidía entre sí. Solo en muy pocos conceptos hubo cierto grado de consenso. Por ejemplo, cuando se les pidió que definan el concepto: \textquotedblleft Hypothesis formulation\textquotedblright, un 22\% respondió \textquotedblleft Define testable statistical hypothesis\textquotedblright~y un 11\% \textquotedblleft What to check through the experiment\textquotedblright, lo que representa un alto grado de coincidencia considerando que un 63\% no respondió.
+También fueron planteadas preguntas enfocadas en la conceptualización de la experimentación. Por ejemplo, cuando se solicitó definir el concepto de: \textquotedblleft Selección de sujetos\textquotedblright, casi un 70\% de los encuestado no respondió, y del 30\% de respuestas obtenidas, ninguna coincidía entre sí. Solo en muy pocos conceptos hubo cierto grado de consenso. Por ejemplo, cuando se les pidió que definan el concepto: \textquotedblleft Hypothesis formulation\textquotedblright, un 22\% respondió \textquotedblleft Define testable statistical hypothesis\textquotedblright~y un 11\% \textquotedblleft What to check through the experiment\textquotedblright, lo que representa un alto grado de coincidencia considerando que un 63\% no respondió. El set de preguntas planteadas permitió demostrar {\color{green}(SC7)} \ul{la existencia de una marcada diversidad conceptual en la comunidad de SE empírica}. 
 
 \subsection{Operational diversity}
-
-\odnote{Se puede separar la diversidad operativa de los roles?}
-
-De acuerdo con el estudio etnográfico la experimentación en SE no es formal. Al igual que para indagar sobre la conceptualización, fueron planteadas preguntas respecto al proceso experimental que se siguen los investigadores en la comunidad ESE.
+\odnote{Se puede separar la diversidad operativa de los roles?}\rodrinote{Yo creo que no}
+Los hallazgos en torno al estudio etnográfico muestran que el protocolo seguido en la experimentación dentro de un grupo de investigación en SE, no es formal. En el survey se plantearon preguntas enfocadas en las actividades que realizan los investigadores de la comunidad de ESE al momento de llevar a cabo un experimento, con el propósito de contrastar el estudio etnográfico.
 
 Aunque aproximadamente un 48.15\% de los encuestados no respondió a la pregunta If you do not carry out all experimental activities, please tell us which ones you do?, un 37.04\% indican que no todas las actividades de experimentación son llevadas a cabo por un solo investigador, lo cual es corroborado por un 33.33\% que indican que la complejidad del proceso de experimentación define roles, e incluso un 29.63\% concuerda en que las actividades realizadas son distribuidas de acuerdo con las habilidades o conocimiento de los investigadores. La Fig. \ref{fig-Operational-Diversity-ESE-Community} muestra las actividades de experimentación con la que las que se identifican los investigadores de la comunidad ESE, lo cual nos llamó la atención ya que a pesar de que indicaron que las actividades son distribuidas, los resultados muestran que cada uno realiza un proceso casi completo (7 procesos distintos), lo que para efectos prácticos en realidad no hay roles. Es probable que los grupos/investigadores no definan roles debido a, p.e. poco personal, lo que claramente expresa una diversidad operativa de la experimentación en SE.
-
-%SI LO DIGIMOS, PUNTUALMENTE EN LA SECCIÓN 4.3.1 ENTREVISTAS SEMI-ESTRUCTURADAS
 
 \begin{figure*}[htbp!]
 	\centering
@@ -99,10 +90,7 @@ Aunque aproximadamente un 48.15\% de los encuestados no respondió a la pregunta 
 \end{figure*}
 
 \subsection{Issues surrounding SE experimentation}
-
-%Compartimentalización según Oscar: Gente que sabe de una cosa y gente que sabe de la otra y esto es más asociado al rol. Rol asociado a conocimientos.
-%ESTO HAY QUE ARREGLAR Y DIVIDIR EN TANTAS NUEVAS SECCIONES COMO SEA SUFICIENTE
-La comunidad ESE esta comenzando a realizarse una introspección sobre los hallazgos obtenidos en torno a la aplicación del método científico en la SE, llegando a concluir que hay problemas que deben ser atendidos. Encontramos que más de un 60\% de los investigadores encuestados consideran que la experimentación en SE es compleja debido a distintos factores (ver Fig. \ref{fig-Factors-Influencing-Complexity-ESE}), especialmente a los referidos a la estadística. Un 33.33\% considera que la complejidad de la experimentación se debe a que el {\color{green}(SC9)} \ul{low sample size results in weak arguments which avoid addressing the industrial problems}; mientras que un 11\% cree que {\color{green}(SC10)} \ul{the abundant range of statistical tests options and poor knowledge about it results in an erroneous statistical study}.
+El estudio etnográfico develó varias situaciones problemáticas en torno a la experimentación en SE, particularmente en lo referente a la comunicación debida a la diversidad terminológica y operativa existente en el grupo de investigación estudiado. El survey abordó más explícitamente la problemática en torno a la experimentación en la comunicad de ESE. Encontramos que más de un 60\% de los investigadores encuestados consideran que la experimentación en SE es compleja debido a distintos factores (ver Fig. \ref{fig-Factors-Influencing-Complexity-ESE}). Por ejemplo, un 33.33\% considera que la complejidad de la experimentación se debe a que el {\color{green}(SC9)} \ul{low sample size results in weak arguments which avoid addressing the industrial problems}; mientras que un 11\% cree que {\color{green}(SC10)} \ul{the abundant range of statistical tests options and poor knowledge about it results in an erroneous statistical study}.
 
 \begin{figure*}[htbp!]
 	\centering
@@ -115,23 +103,23 @@ Así mismo, un 11\% de los investigadores piensan que {\color{green}(SC11)} \ul{t
 
 Por otra parte, otro problema remarcado en este estudio es el referido a la dificultad en la gestión de los datos. Un 14.81\% considera que {\color{green}(SC14)} \ul{el manejo y el análisis de los datos experimentales son complejos, lo que podría deberse en parte a las distintas maneras que tienen los investigadores para gestionarlos}: Un 66.67\% afirma que utilizan hojas de calculo, un 25\% repositorios de datos relacionales y un 44\% formatos propietarios. Por otra parte, un 7.41\% de los encuestados hace énfasis en la limitada compartición de datos que existe, lo que es corroborado por mas de un 10\% de investigadores que consideran que {\color{green}(SC15)} \ul{la agregación de datos entre replicaciones es compleja, quizá en parte porque no existe un soporte adecuado para las replicaciones y la existencia del conocimiento tácito}.
 
-Finalmente, encontramos que al parecer para los investigadores encuestados no es del todo claro el propósito de la SE experimentation. Aunque la mayoría de investigadores encuestados (62.96\%) indican que la experimentación esta orientada a la creación de conocimiento en base a datos empíricos y a múltiples replicaciones para ser transferido a la industria y a la academia; no obstante, un 33.33\% no indican cual es el propósito de hacer experimentos en SE, de la mano de otro 25.93\% que también responde que los experimentos sirven para ganar conocimiento acerca de un fenómeno bajo estudio y para publicar eventualmente los resultados de experimentos aislados (ver Fig. \ref{Purpose-SE-Experiments}).
+%Finalmente, encontramos que al parecer para los investigadores encuestados no es del todo claro el propósito de la SE experimentation. Aunque la mayoría de investigadores encuestados (62.96\%) indican que la experimentación esta orientada a la creación de conocimiento en base a datos empíricos y a múltiples replicaciones para ser transferido a la industria y a la academia; no obstante, un 33.33\% no indican cual es el propósito de hacer experimentos en SE, de la mano de otro 25.93\% que también responde que los experimentos sirven para ganar conocimiento acerca de un fenómeno bajo estudio y para publicar eventualmente los resultados de experimentos aislados (ver Fig. \ref{Purpose-SE-Experiments}).
 
-\begin{figure*}[htbp!]
-	\centering
-	\includegraphics[width=12cm]{Images/Purpose-SE-Experiments}
-	\caption{Purpose of SE Experiments}
-	\label{fig-Purpose-SE-Experiments}
-\end{figure*}
+%\begin{figure*}[htbp!]
+%	\centering
+%	\includegraphics[width=12cm]{Images/Purpose-SE-Experiments}
+%	\caption{Purpose of SE Experiments}
+%	\label{fig-Purpose-SE-Experiments}
+%\end{figure*}
 
-Esta situación se corroboró al indagar sobre las situaciones en las cuales un experimento es seleccionado como método de investigación (ver Fig. \ref{fig-why-experiments-done}), lo que no fue respondido por un 40.74\% de los encuestados. No obstante, quienes respondieron tuvieron criterios divididos: Un 18.52\% dijo que un experimento se realiza para aislar un fenómeno de interés o para confirmar un tipo específico de hipótesis; mientras que un 14.81\% indicó que se utiliza para comparar dos cosas o para investigar una relación causa-efecto. Minoritariamente hubo investigadores que indicaron que un experimento se realiza dependiendo de la pregunta de investigación planteada (11.11\%), como prueba de concepto (3.7\%) y cuando una replicación es posible (3.7\%).
+%Esta situación se corroboró al indagar sobre las situaciones en las cuales un experimento es seleccionado como método de investigación (ver Fig. \ref{fig-why-experiments-done}), lo que no fue respondido por un 40.74\% de los encuestados. No obstante, quienes respondieron tuvieron criterios divididos: Un 18.52\% dijo que un experimento se realiza para aislar un fenómeno de interés o para confirmar un tipo específico de hipótesis; mientras que un 14.81\% indicó que se utiliza para comparar dos cosas o para investigar una relación causa-efecto. Minoritariamente hubo investigadores que indicaron que un experimento se realiza dependiendo de la pregunta de investigación planteada (11.11\%), como prueba de concepto (3.7\%) y cuando una replicación es posible (3.7\%).
 
-\begin{figure*}[htbp!]
-	\centering
-	\includegraphics[width=12cm]{Images/Why-Experiment-Method-Selected}
-	\caption{Reasons why an Experiment is Selected as Research Method}
-	\label{fig-why-experiments-done}
-\end{figure*}
+%\begin{figure*}[htbp!]
+%	\centering
+%	\includegraphics[width=12cm]{Images/Why-Experiment-Method-Selected}
+%	\caption{Reasons why an Experiment is Selected as Research Method}
+%	\label{fig-why-experiments-done}
+% \end{figure*}
 
 \subsection{Conclusiones}
 
@@ -161,7 +149,6 @@ los aspectos que consideramos como problemáticos en torno a la SE experimentatio
 Los resultados del survey han demostrado en gran medida que los hallazgos del estudio etnográfico que hemos realizado dentro de un grupo de investigación en ESE son generalizables a la comunidad de ESE:
 
 \begin{itemize}
-
 \item La formación en experimentación de los investigadores en ESE ha sido informal: tiempos de entrenamiento variados, aprendizaje obtenido a partir de distintas fuentes y con contenidos muy variados. En la mayoría de los casos, la formación ha tenido una componente eminentemente práctica.
 
 \item Las fuentes de información utilizadas en la comunidad de ESE son generales y escasas.  El texto más popular en la comunidad es el libro de Wohlin et al \cite{Wohlin2000}, seguido de Juristo et al. \cite{Juristo-2001-SE-experimentation} y Runenson et al. \cite{Runenson-2012-SE-case-study}.
@@ -169,13 +156,10 @@ Los resultados del survey han demostrado en gran medida que los hallazgos del es
 \item \odnote{acerca de diversidad terminológica}
 
 \item \odnote{acerca de diversidad operativa}
-
 \item \odnote{acerca de  roles}
-
 \item \odnote{issues}
-
 \end{itemize}
 
-La escasa formalidad que hemos observado en el proceso experimental de SE contrasta con la formalidad \textit{aparente} de las disciplinas experimental tradicionales. Decimos ''aparente'' porque, en realidad, esta creencia no está fundada en hechos objetivos. Todas las disciplinas comenten errores durante la realización del proceso experimental \cite{Good2012,Huck2009,Vickers2010}, y SE no representa una excepción \cite{Reyes2018}.
+La escasa formalidad que hemos observado en el proceso experimental de SE contrasta con la formalidad \textit{aparente} de las disciplinas experimental tradicionales. Decimos ''aparente'' porque, en realidad, esta creencia no está fundada en hechos objetivos. Todas las disciplinas comenten errores durante la realización del proceso experimental \cite{Good2012,Huck2009,Vickers2010}, y SE no representa una excepción \cite{Reyes-2018-Statistical-Errors-in-SE}.
 
 Este hecho nos motivó a realizar una investigación etnográfica, similar a la reportada anteriormente en la Sección~\ref{sec-ESE-etnography}, pero aplicada a una disciplina distinta de SE. Aunque podríamos haber escogido una disciplina relacionada con las ciencias de la salud o las ciencias físicas y naturales, hemos preferido mantenernos dentro del área de ingeniería, ya que probablemente las actividades relacionadas por distintas ingenierías son más comparables entre ellas que las realizadas por una ingeniería y, e.g., la medicina. La investigación se describe en la siguiente sección.
