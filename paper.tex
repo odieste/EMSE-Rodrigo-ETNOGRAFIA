@@ -57,7 +57,16 @@
 \usepackage{graphicx}
 \usepackage{tabulary}
 \usepackage{multirow}
-\usepackage{enumerate}
+\usepackage{enumitem}
+
+\setlist[enumerate]{
+  labelsep=8pt,
+  labelindent=0.5\parindent,
+  itemindent=0pt,
+  leftmargin=*,
+  before=\setlength{\listparindent}{-\leftmargin},
+}
+
 \usepackage{hyperref}
 \usepackage{color}
 \usepackage{soul}
