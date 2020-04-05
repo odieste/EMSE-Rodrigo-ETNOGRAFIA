@@ -37,11 +37,17 @@
 %\end{filecontents*}
 %
 \RequirePackage{fix-cm}
+\RequirePackage[hyphens]{url}
 %
 %\documentclass{svjour3}                     % onecolumn (standard format)
-%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
-%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
-\documentclass[twocolumn]{svjour3}          % twocolumn
+%\documentclass[smallcondensed, referee]{svjour3}     % onecolumn (ditto)
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+% Line numbers
+\usepackage[switch, modulo]{lineno}
+\renewcommand{\linenumberfont}{\normalfont\tiny\color{red}}
+\linenumbers
 %
 \smartqed  % flush right qed marks, e.g. at end of proof
 %
@@ -79,12 +85,14 @@
 \usepackage{lscape}
 \usepackage{caption}
 \usepackage[title]{appendix}
-\usepackage{url}
+\usepackage{ulem}
+\usepackage{placeins}
 
 \definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
 
 \newcommand{\rodrinote}[1]{\textcolor{blue}{[RODRI:#1]}}
 \newcommand{\odnote}[1]{\textcolor{applegreen}{[OD:#1]}}
+\newcommand{\here}{\textcolor{red}{*\newline *\newline *\newline SEGUIR AQU\'I\dots \newline}}
 %===============================
 
 % please place your own definitions here and don't use \def but
@@ -95,10 +103,10 @@
 %
 \begin{document}
 
-\title{Differences Between Experimental Practices in Software Engineering and Other Disciplines? Two Ethnographical Studies}
+\title{Comparison of Experimental Practices in Software Engineering and Biotechnology Engineering: Two Ethnographical Studies}
 %\subtitle{Do you have a subtitle?\\ If so, write it here}
 
-\titlerunning{Differences Between Experimental Practices in Software Engineering and Other Disciplines}        % if too long for running head
+\titlerunning{Comparison of Experimental Practices}        % if too long for running head
 
 \author{Efra{\'i}n R. Fonseca C.	\and
         Oscar Dieste \and
@@ -222,9 +230,9 @@
 %\end{table}
 
 
-\begin{acknowledgements}
-Thanks et all.
-\end{acknowledgements}
+%\begin{acknowledgements}
+%Thanks et all.
+%\end{acknowledgements}
 
 % BibTeX users please use one of
 %\bibliographystyle{spbasic}      % basic style, author-year citations
